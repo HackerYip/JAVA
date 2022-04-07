@@ -1,13 +1,8 @@
 import java.util.Date;
 import java.util.Scanner;
 
-public class Test {
-    package Test;
+public class TestDemo {
 
-import java.util.Date;
-import java.util.Scanner;
-
-    public class Test {
 
    /* public static void main(String[] args) {
         int i = 0;
@@ -85,6 +80,8 @@ import java.util.Scanner;
             }
         }
     }
+
+
 
 
 
