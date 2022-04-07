@@ -49,7 +49,7 @@ public class TestDemo {
                 j = 28;
             }
 
-            for (int q = 0; q < arr.length; q++) {20
+            for (int q = 0; q < arr.length; q++) {
                 if (months == arr[q]) {
                     j = 31;
                 }
@@ -85,4 +85,4 @@ public class TestDemo {
 
 
 
-}
+
