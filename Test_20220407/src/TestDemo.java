@@ -62,7 +62,7 @@ public class TestDemo {
 
                 Date date = new Date(years - 1900, months - 1, 1);
                 //
-                System.out.println(date.toLocaleString());
+                System.out.println(date.toLocaleString());//try push
                 //
                 int day = date.getDay();
                 System.out.println("星期天\t星期1\t星期2\t星期3\t星期4\t星期5\t星期6\t");
