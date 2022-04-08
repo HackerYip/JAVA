@@ -7,8 +7,12 @@ public class TestDemo {
 
     private static int count = 0;//全局，记分;
 
+    static int playerX,playerY;
+
+    static int  portalX, portalY, portalX2,portalY2;
+
     public static void main(String[] args) {
-        String [][] map = new String[10][12];
+        String [][] map = new String[12][12];
         //初始化
         for(int i = 0; i < map.length; i++){
             //第一个数组
@@ -29,18 +33,21 @@ public class TestDemo {
                 }
             }
         }
-        int playerX = (int)(Math.random() * map[0].length);
-        int playerY = (int)(Math.random() * map[0].length);
+         playerX = (int)(Math.random() * map[0].length);
+         playerY = (int)(Math.random() * map[0].length);
 
-        int portalX =(int)(Math.random() * map[0].length);
-        int portalY =(int)(Math.random() * map[0].length);
+         portalX =(int)(Math.random() * map[0].length);
+         portalY =(int)(Math.random() * map[0].length);
 
-        int portalX2 =(int)(Math.random() * map[0].length);
-        int portalY2=(int)(Math.random() * map[0].length);
+         portalX2 =(int)(Math.random() * map[0].length);
+         portalY2=(int)(Math.random() * map[0].length);
 
         map[portalX][portalY] = "P";
         map[portalX2][portalY2] = "P";
+        map[playerY][playerX] = "㊣";
 
+
+        do {
 
         for(int y = 0; y < map.length; y++){
             for(int x = 0; x < map[0].length; x++){
@@ -49,16 +56,15 @@ public class TestDemo {
 
             System.out.println();
         }
-        int targetX = playerX, targetY = playerY;
 
 
-        do {
+
 
             Scanner scanner = new Scanner(System.in);
 
             String str = scanner.next().toLowerCase();
 
-
+            int targetX = playerX, targetY = playerY;
             switch (str) {
                 case "w"://up
                     targetY--;
@@ -72,6 +78,7 @@ public class TestDemo {
                     targetY++;
 
                     if (targetY > map[0].length - 1) {
+                        continue;
 
                     }
 
@@ -106,15 +113,9 @@ public class TestDemo {
                 case 3:
                     count = 0;
                     System.out.println("分数:" + count);
-                    break;
+                    return;
                 case 4:
-
-
-
-
-
-
-
+                case 5:
                     break;
 
 
@@ -124,16 +125,53 @@ public class TestDemo {
 
     }
 
+    /**
+     * 判断目标位置，移动玩家
+     * @param targetX
+     * @param targetY
+     * @param map
+     * @return
+     */
     public static int Judge(int targetX, int targetY,String[][] map) {
         String str = map[targetY][targetX];
-        if (str.equals("#")) {
+        if (str.equals("★")) {//豆子
+            map[targetY][targetX] = "㊣";
+            map[playerY][playerX] = "□";//空白
+            playerY = targetY;
+            playerX = targetX;
             return 1;
-        } else if (str.equals("S")) {
+        } else if (str.equals("※")) {
+            map[targetY][targetX] = "㊣";
+            map[playerY][playerX] = "□";//空白
+            playerY = targetY;
+            playerX = targetX;
             return 2;
         } else if (str.equals("B")) {
+            map[targetY][targetX] = "㊣";
+            map[playerY][playerX] = "□";//空白
+            playerY = targetY;
+            playerX = targetX;
             return 3;
-        } else  {
+        } else if (str.equals("P")) {
+           //查找传送们的另一端
+            if(targetX == portalX && targetY == portalY){
+                map[portalY2][portalX2] = "㊣";
+                map[playerY][playerX] = "□";//玩家原来的位置置空
+                map[portalX][portalY] = "□";//第一个传送门置空
+                playerY = targetY;
+                playerX = targetX;
+            }else {
+                if(targetX == portalX && targetY == portalY) {
+                    map[portalY2][portalX2] = "㊣";
+                    map[playerY][playerX] = "□";//玩家原来的位置置空
+                    map[portalX][portalY] = "□";//第一个传送门置空
+                    playerY = targetY;
+                    playerX = targetX;
+                }
+            }
             return 4;
+        } else  {
+            return 5;
         }
     }
 }
