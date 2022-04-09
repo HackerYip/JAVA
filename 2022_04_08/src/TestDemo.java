@@ -2,7 +2,17 @@ import java.sql.SQLOutput;
 import java.util.Locale;
 import java.util.Scanner;
 
+/*
 public class TestDemo {
+
+*/
+/*
+    public static void main(String[] args) {
+        int a = 10;
+        ++a;
+        System.out.println(a);
+    }
+*//*
 
 
     private static int count = 0;//全局，记分;
@@ -125,13 +135,15 @@ public class TestDemo {
 
     }
 
-    /**
+    */
+/**
      * 判断目标位置，移动玩家
      * @param targetX
      * @param targetY
      * @param map
      * @return
-     */
+     *//*
+
     public static int Judge(int targetX, int targetY,String[][] map) {
         String str = map[targetY][targetX];
         if (str.equals("★")) {//豆子
@@ -175,4 +187,33 @@ public class TestDemo {
         }
     }
 }
+*/
+
+
+
+
+public class TestDemo {
+
+    public static void main(String[] args) {
+        String[] Province = {"四川", "云南", "广西"};
+
+        String[] city1 = {"成都", "绵阳"};
+        String[] city2 = {"昆明", "大理"};
+
+        String[][] cities = {city1, city2};
+
+        System.out.println("1.查看城市");
+        System.out.println("2.增加城市");
+        System.out.println("3.删除城市");
+
+        Scanner scanner = new Scanner(System.in);
+
+        int num = scanner.nextInt();
+
+        switch (num) {
+
+        }
+    }
+}
+
 
