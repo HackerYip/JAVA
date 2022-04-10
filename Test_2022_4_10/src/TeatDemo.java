@@ -336,6 +336,16 @@ public static int add3(int a, int b){
     }
 
 
+    public static void print2(int[] array, int len){
+        if(len == array.length-1){
+            System.out.println(array[len]);
+            return;
+        }
+        print2(array,len+1);
+        System.out.println(array[len]);
+    }
+
+
     public static void print(int[] array, int len){
         if(len == 1){
             System.out.println(array[len-1]);
@@ -351,10 +361,4 @@ public static int add3(int a, int b){
         int[] array = {1,2,3,4};
         print(array,array.length);
     }
-
-
-
-
-
-
 }
