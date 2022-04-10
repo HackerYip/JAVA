@@ -2,6 +2,22 @@ import java.util.Scanner;
 
 public class Test {
 
+    public static int fac2(int n){
+        if(n == 1){
+            return 1;
+        }
+        int sum = n + fac2(n-1);
+        return sum;
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println("1~10的递归相加的结果为 " + fac2(10));
+    }
+
+
+
+
     public static int fac(int n){//n*(n-1)
         if(n == 1){
             return 1;
@@ -10,7 +26,7 @@ public class Test {
         return tmp;
     }
 
-    public static void main(String[] args) {
+    public static void main5(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         System.out.println(n + "的阶乘的结果是 "+ fac(n));
