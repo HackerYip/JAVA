@@ -1,7 +1,32 @@
+import java.util.Scanner;
+
 public class Test {
 
+    public static int fac(int n){//n*(n-1)
+        if(n == 1){
+            return 1;
+        }
+        int tmp = n * fac(n-1);
+        return tmp;
+    }
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        System.out.println(n + "的阶乘的结果是 "+ fac(n));
+    }
+
+    public static void main4(String[] args) {
+        int[] array = {1,2,3,4,5};
+        System.out.println(array[10]);//ArrayIndexOutOfBoundException
+
+        System.out.println(array[3]);// 4
+        array[3] = 99;//change
+        System.out.println(array[3]);// 99
+    }
+
+
+    public static void main3(String[] args) {
         int[] array;
         //array = {1,2,3,4,5,};//ERROR
         array = new int[]{1,2,3,4,5};
