@@ -296,18 +296,37 @@ public static int add3(int a, int b){
 
 
 
+    public static int fib(int n){
+        if(n == 1){
+            return 0;
+        }
+        if(n == 2){
+            return 1;
+        }
+        int tmp = fib(n-1)+fib(n-2);
+        return tmp;
+    }
+
+    public static void main17(String[] args) {
+        System.out.println(fib(1));
+        System.out.println(fib(10));
+        System.out.println(fib(15));
+    }
+
+
     public static void print(int[] array, int len){
         if(len == 1){
             System.out.println(array[len-1]);
             return;
         }
+
+        System.out.println(array[len-1]);
         print(array,len-1);
-        System.out.println(array[len]);
     }
 
 
     public static void main(String[] args) {
-        int[] array = {1,2,3,4,5};
+        int[] array = {1,2,3,4};
         print(array,array.length);
     }
 
