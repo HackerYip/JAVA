@@ -11,7 +11,7 @@ public class Test {
     }
 
 
-    public static void main(String[] args) {
+    public static void main6(String[] args) {
         System.out.println("1~10的递归相加的结果为 " + fac2(10));
     }
 
