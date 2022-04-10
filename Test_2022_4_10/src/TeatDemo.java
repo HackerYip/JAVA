@@ -3,6 +3,29 @@ import java.util.Scanner;
 public class TeatDemo {
 
 
+    public static void login(){
+        int count = 3;
+        Scanner scanner = new Scanner(System.in);
+
+        while(count != 0){
+            String password = scanner.nextLine();
+            System.out.println("请输入你的密码,你有三次机会: ");
+            if(password.equals("123")){
+                System.out.println("登录成功");
+                return;
+            }
+            else{
+                count--;
+                System.out.println("你还有" + count + "次机会");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        login();
+    }
+
+
     public static void func7(int n){
 
         for (int i = 31; i >= 1; i-=2  ) {
@@ -15,7 +38,7 @@ public class TeatDemo {
     }
 
 
-    public static void main(String[] args) {
+    public static void main10(String[] args) {
         func7(7);
     }
 
