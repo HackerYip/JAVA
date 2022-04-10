@@ -2,6 +2,28 @@ import java.util.Scanner;
 
 public class TeatDemo {
 
+    public static void swap(int a, int b){
+        int tmp = a;
+        a = b;
+        b = tmp;
+
+    }
+
+
+public static int add(int a, int b){
+
+    return a + b;
+}
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 10;
+        int ret = add(x,y);//值传递
+        System.out.println();
+        swap(x,y);
+        System.out.println();
+        System.out.println(ret);
+    }
+
 
     public static void login(){
         int count = 3;
@@ -21,7 +43,7 @@ public class TeatDemo {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main11(String[] args) {
         login();
     }
 
