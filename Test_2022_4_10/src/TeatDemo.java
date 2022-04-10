@@ -266,6 +266,20 @@ public static int add3(int a, int b){
 
 
 
+    public static void main15(String[] args) {
+        int i = 0;
+        int j = 0;
+        for(i = 1; i <= 9; i++) {
+            //打印一行
+            for(j = 1; j <= i; j++){
+                System.out.printf("%d*%d=%-2d\t",j, i, j*i);
+            }
+            System.out.println();
+        }
+
+    }
+
+
     public static void func10(int n){
         for (int i = 31; i >= 1; i-=2) {
             System.out.println(((n >> i) & 1) + " ");
@@ -275,8 +289,31 @@ public static int add3(int a, int b){
             System.out.println(((n >> i) & 1) + " ");
         }
     }
-    public static void main(String[] args) {
+    public static void main14(String[] args) {
 
       func10(10);
     }
+
+
+
+    public static void print(int[] array, int len){
+        if(len == 1){
+            System.out.println(array[len-1]);
+            return;
+        }
+        print(array,len-1);
+        System.out.println(array[len]);
+    }
+
+
+    public static void main(String[] args) {
+        int[] array = {1,2,3,4,5};
+        print(array,array.length);
+    }
+
+
+
+
+
+
 }
