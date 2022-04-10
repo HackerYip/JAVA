@@ -307,10 +307,32 @@ public static int add3(int a, int b){
         return tmp;
     }
 
+    public static int fib2(int n){
+        if(n == 1){
+            return 0;
+        }
+        if(n == 2){
+            return 1;
+        }
+
+        int f1 = 0;
+        int f2 = 1;
+
+        int f3 = 0;
+        for (int i = 3; i <= n; i++) {
+            f3 = f1 + f2;
+            f1 = f2;
+            f2 = f3;
+        }
+        return f3;
+    }
     public static void main17(String[] args) {
         System.out.println(fib(1));
         System.out.println(fib(10));
         System.out.println(fib(15));
+        System.out.println(fib2(1));
+        System.out.println(fib2(10));
+        System.out.println(fib2(15));
     }
 
 
