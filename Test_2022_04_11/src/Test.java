@@ -2,6 +2,37 @@ import java.util.Scanner;
 
 public class Test {
 
+    public static void fac3(int n){
+        if(n <= 9){
+            System.out.print(" "+ n);//终止条件就是个位数，直接打印
+            return;
+        }
+        System.out.print(" "+ n % 10);//如1234，次数直接打印4
+        fac3(n / 10);//开始递归，123
+        //此处是逆序打印，按顺序只要递归和打印互换即可
+    }
+
+    public static void fac4(int n){
+        if(n <= 9){
+            System.out.print(" "+ n);//终止条件就是个位数，直接打印
+            return;
+        }
+
+        fac3(n / 10);
+        System.out.print(" "+ n % 10);//此处实现顺序打印
+    }
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        fac3(n);
+        System.out.println();
+        fac4(n);
+    }
+
+
+
     public static int fac2(int n){
         if(n == 1){
             return 1;
