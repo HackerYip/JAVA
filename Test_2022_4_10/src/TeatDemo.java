@@ -2,6 +2,30 @@ import java.util.Scanner;
 
 public class TeatDemo {
 
+    //1.方法名相同
+    //2.参数列表不同(个数，顺序，类型)
+    //3.返回值无要求，不影响重载
+    //满足这三个要求就叫，方法的重载
+
+    public static int add(int a, int b){
+        return a+b;
+    }
+
+    public static int add(int a, int b, int c){
+        return a+b+c;
+    }
+
+    public static double add(double a, double b){
+        return a+b;
+    }
+
+    public static void main(String[] args) {
+
+    }
+
+
+
+
     public static void swap(int a, int b){
         int tmp = a;
         a = b;
@@ -10,11 +34,11 @@ public class TeatDemo {
     }
 
 
-public static int add(int a, int b){
+public static int add3(int a, int b){
 
     return a + b;
 }
-    public static void main(String[] args) {
+    public static void main12(String[] args) {
         int x = 10;
         int y = 10;
         int ret = add(x,y);//值传递
