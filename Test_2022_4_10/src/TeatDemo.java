@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class TeatDemo {
-
     //1.方法名相同
     //2.参数列表不同(个数，顺序，类型)
     //3.返回值无要求，不影响重载
@@ -19,7 +18,7 @@ public class TeatDemo {
         return a+b;
     }
 
-    public static void main(String[] args) {
+    public static void main13(String[] args) {
 
     }
 
@@ -262,5 +261,22 @@ public static int add3(int a, int b){
             }
         }
         System.out.println("闰年的个数: "+ count);
+    }
+
+
+
+
+    public static void func10(int n){
+        for (int i = 31; i >= 1; i-=2) {
+            System.out.println(((n >> i) & 1) + " ");
+        }
+        System.out.println();
+        for (int i = 30; i >= 0; i-=2) {
+            System.out.println(((n >> i) & 1) + " ");
+        }
+    }
+    public static void main(String[] args) {
+
+      func10(10);
     }
 }
