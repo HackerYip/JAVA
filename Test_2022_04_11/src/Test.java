@@ -1,6 +1,20 @@
 public class Test {
 
+
     public static void main(String[] args) {
+        int[] array;
+        //array = {1,2,3,4,5,};//ERROR
+        array = new int[]{1,2,3,4,5};
+        array = new int[]{9,8,7,6,5};
+
+        int[] array2 = {1,2,3,4,5};//once, no more twice
+        //array2 = {9,8,7,6,5};//once, no more twice
+
+        boolean[] booleans = new boolean[10];
+        System.out.println("fasdsad");
+    }
+
+    public static void main2(String[] args) {
         double[] array = new double[10];//默认用0初始化
         String[] strings = new String[10];//引用类型，默认用null初始化
 
