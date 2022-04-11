@@ -1,6 +1,28 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Test {
+
+    public static void main(String[] args) {
+        int[] array = {123};
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+
+        //for-each 增强for循环，还可以用到打印集合当中的元素
+        for( int x: array ){
+            System.out.println(x + " ");
+        }
+
+        //借助JAVA本身提供的一些方法来实现数组的打印
+        String ret = Arrays.toString(array);
+        System.out.println(ret);
+
+    }
+
+
+
 
     public static void fac3(int n){
         if(n <= 9){
@@ -11,7 +33,6 @@ public class Test {
         fac3(n / 10);//开始递归，123
         //此处是逆序打印，按顺序只要递归和打印互换即可
     }
-
     public static void fac4(int n){
         if(n <= 9){
             System.out.print(" "+ n);//终止条件就是个位数，直接打印
@@ -22,8 +43,7 @@ public class Test {
         System.out.print(" "+ n % 10);//此处实现顺序打印
     }
 
-
-    public static void main(String[] args) {
+    public static void main7(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         fac3(n);
