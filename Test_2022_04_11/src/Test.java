@@ -4,6 +4,28 @@ import java.util.Scanner;
 public class Test {
 
     public static void main(String[] args) {
+
+
+
+
+    }
+
+
+
+
+
+    public static void main9(String[] args) {
+        int[] array1 = {1,2,3,4};
+
+        int[] array2 = array1;//这个引用array2指向了array1所指向的对象
+        System.out.println("array1:" + Arrays.toString(array1));
+        System.out.println("array2:" + Arrays.toString(array2));
+
+
+    }
+
+
+    public static void main8(String[] args) {
         int[] array = {123};
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
