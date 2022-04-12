@@ -1,6 +1,23 @@
+import com.sun.deploy.uitoolkit.impl.fx.AppletStageManager;
+
 import java.util.Arrays;
 
 public class TestDemo {
+
+    //实现一个方法 printArray, 以数组为参数, 循环访问数组中的每个元素, 打印每个元素的值.
+
+    public static void printArray(int[] array){
+            System.out.println(Arrays.toString(array));
+    }
+
+
+    public static void main(String[] args) {
+        int[] array = {1,2,3,4,5,6,7,8,9,10};
+         printArray(array);
+    }
+
+
+
 
     //实现一个方法 avg, 以数组为参数, 求数组中所有元素的平均值(注意方法的返回值类型).
     public static double avg(int[] array) {
@@ -14,7 +31,7 @@ public class TestDemo {
         return average;
     }
 
-    public static void main(String[] args) {
+    public static void main3(String[] args) {
         int[] array= {80,82,85,90,95,98};
         System.out.println(avg(array));
     }

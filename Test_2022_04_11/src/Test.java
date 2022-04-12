@@ -6,6 +6,9 @@ public class Test {
 
 
 
+
+
+
     public static void main9(String[] args) {
         int[] array1 = {1,2,3,4};
 
@@ -32,7 +35,6 @@ public class Test {
         //借助JAVA本身提供的一些方法来实现数组的打印
         String ret = Arrays.toString(array);
         System.out.println(ret);
-
     }
 
 
