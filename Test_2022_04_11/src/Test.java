@@ -3,10 +3,6 @@ import java.util.Scanner;
 
 public class Test {
 
-    public static void main(String[] args) {
-    }
-
-
 
 
 
@@ -150,5 +146,38 @@ public class Test {
 
         System.out.println(array.length);//根据数组名.length来自动获取 数组的长度
     }
+    public static int fib(int n){
+        if(n == 1){
+            return 0;
+        }
+        if(n == 2){
+            return 1;
+        }
+        int tmp = fib(n-1) + fib(n-2);
+        return tmp;
+    }
 
+    public static void main20(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int ret = fib(n);
+
+        System.out.println("斐波那契数列的第n项为：" + ret);
+    }
+
+    public static int add(int a, int b){
+        return a+b;
+    }
+
+
+    public static double add(double x, double y, double z){
+        return x+y+z;
+    }
+
+    public static void main(String[] args) {
+
+        int sum1 = add(1,2);
+        double sum2 = add(1,2,3);
+    }
 }
