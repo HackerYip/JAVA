@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class TestDemo {
 
     public static int sum(int[] array) {
@@ -5,15 +7,16 @@ public class TestDemo {
         for (int i = 0; i < array.length; i++) {
             k += array[i];
         }
+        return k;
     }
 
 
 
     public static void main(String[] args) {
-
+        int k = 0;
         int[] array = {1,2,3,4,5,6,7,8,9,10};
         int ret = sum(array);
-
+        System.out.println(ret);
     }
 
 
