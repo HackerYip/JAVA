@@ -2,6 +2,25 @@ import java.util.Arrays;
 
 public class TestDemo {
 
+    //实现一个方法 avg, 以数组为参数, 求数组中所有元素的平均值(注意方法的返回值类型).
+    public static double avg(int[] array) {
+        double average = 0;
+        int ret = 0;
+        for( int i: array ){
+            ret += i;//for循环增强遍历先求出一个总值
+        }
+        average = ret/array.length;//总值除以系数得出平均数，注意是double类型
+
+        return average;
+    }
+
+    public static void main(String[] args) {
+        int[] array= {80,82,85,90,95,98};
+        System.out.println(avg(array));
+    }
+
+
+
     public static int sum(int[] array) {
         int k = 0;
         for (int i = 0; i < array.length; i++) {
@@ -12,7 +31,7 @@ public class TestDemo {
 
 
 
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         int k = 0;
         int[] array = {1,2,3,4,5,6,7,8,9,10};
         int ret = sum(array);
