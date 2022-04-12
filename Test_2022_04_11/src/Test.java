@@ -175,9 +175,31 @@ public class Test {
         return x+y+z;
     }
 
-    public static void main(String[] args) {
+    public static void main21(String[] args) {
 
         int sum1 = add(1,2);
         double sum2 = add(1,2,3);
     }
-}
+
+
+        public static int fac5(int n){
+
+            if(n <= 9){
+                //终止条件就是个位数，直接打印
+                return n;
+            }
+            return  (n % 10) + fac5(n / 10);
+        }
+
+
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int sum = fac5(n);
+        System.out.println(sum);
+    }
+
+
+    }
