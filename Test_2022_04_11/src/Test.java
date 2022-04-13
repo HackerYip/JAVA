@@ -8,7 +8,7 @@ public class Test {
         String str = "[";
         for (int i = 0; i < array.length; i++) {
             str = str + array[i];
-            if(i == array.length-1){
+            if(i != array.length-1){
                 str += "," ;
             }
         }
@@ -20,7 +20,7 @@ public class Test {
 
         //实现一个方法 toString, 把一个整型数组转换成字符串. 例如数组 {1, 2, 3} , 返回的字符串为 "[1, 2, 3]"
         // 注意 逗号 的位置和数量.
-        int[] array = {1,2,3};
+        int[] array = {1,2,3,4};
         String ret = myToString(array);
 
         System.out.println(ret);//打印字符串，直接用返回值打印即可
