@@ -4,13 +4,27 @@ import java.util.Scanner;
 public class Test {
 
 
-//    public static String toString(){
-//
-//    }
+    public static String myToString(int[] array){
+        String str = "[";
+        for (int i = 0; i < array.length; i++) {
+            str = str + array[i];
+            if(i == array.length-1){
+                str += "," ;
+            }
+        }
+        str += "]";
+        return str;
+    }
 
-//    public static void main111(String[] args) {
-//        toString();
-//    }
+    public static void main(String[] args) {
+
+        //实现一个方法 toString, 把一个整型数组转换成字符串. 例如数组 {1, 2, 3} , 返回的字符串为 "[1, 2, 3]"
+        // 注意 逗号 的位置和数量.
+        int[] array = {1,2,3};
+        String ret = myToString(array);
+
+        System.out.println(ret);//打印字符串，直接用返回值打印即可
+    }
 
 
     public static void transform(int[] array){
@@ -20,7 +34,7 @@ public class Test {
     }
 
 
-    public static void main(String[] args) {
+    public static void main33(String[] args) {
 
         //实现一个方法 transform, 以数组为参数, 循环将数组中的每个元素 乘以 2 , 并设置到对应的数组元素上.
         // 例如 原数组为 {1, 2, 3}, 修改之后为 {2, 4, 6}
