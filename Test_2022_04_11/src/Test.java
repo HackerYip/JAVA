@@ -3,7 +3,21 @@ import java.util.Scanner;
 
 public class Test {
 
+    //实现一个方法 copyOf, 对一个整型数组进行拷贝, 得到一个新的数组.
 
+    public static void copyOf(int[] array,int[] array2){
+        for (int i = 0; i < array.length; i++) {
+            array2[i] = array[i];
+        }
+    }
+
+
+    public static void main(String[] args) {
+        int[] array = {1,2,3,4,5};
+        int[] array2 = new int[5];
+        copyOf(array,array2);
+        System.out.println(Arrays.toString(array2));
+    }
 
 
 
@@ -195,7 +209,7 @@ public class Test {
 
 
 
-    public static void main(String[] args) {
+    public static void main30(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
