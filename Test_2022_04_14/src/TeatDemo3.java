@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //Person 类名 - 大驼峰
 //一个类由两部分组成
 class Person{
@@ -22,4 +24,6 @@ class Person{
 public class TeatDemo3 {
     Person person = new Person();
     Person person2 = new Person();
+
+
 }
