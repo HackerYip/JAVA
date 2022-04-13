@@ -3,6 +3,51 @@ import java.util.Scanner;
 
 public class Test {
 
+
+//    public static String toString(){
+//
+//    }
+
+//    public static void main111(String[] args) {
+//        toString();
+//    }
+
+
+    public static void transform(int[] array){
+        for (int i = 0; i < array.length; i++) {
+           array[i] = array[i] << 1;
+        }
+    }
+
+
+    public static void main(String[] args) {
+
+        //实现一个方法 transform, 以数组为参数, 循环将数组中的每个元素 乘以 2 , 并设置到对应的数组元素上.
+        // 例如 原数组为 {1, 2, 3}, 修改之后为 {2, 4, 6}
+
+        int[] array = {1,2,3};
+        transform(array);
+
+        System.out.println(Arrays.toString(array));
+    }
+
+
+
+
+    public static void main32(String[] args) {
+        //创建一个 int 类型的数组, 元素个数为 100, 并把每个元素依次设置为 1 - 100
+
+        int[] array = new int[100];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i;
+        }
+        System.out.println(Arrays.toString(array));
+    }
+
+
+
+
+
     //实现一个方法 copyOf, 对一个整型数组进行拷贝, 得到一个新的数组.
 
     public static void copyOf(int[] array,int[] array2){
@@ -12,14 +57,12 @@ public class Test {
     }
 
 
-    public static void main(String[] args) {
+    public static void main31(String[] args) {
         int[] array = {1,2,3,4,5};
         int[] array2 = new int[5];
         copyOf(array,array2);
         System.out.println(Arrays.toString(array2));
     }
-
-
 
 
 
