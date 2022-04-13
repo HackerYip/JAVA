@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class TestDemo {
 
 
-    public static void main(String[] args) {
+    public static void main12(String[] args) {
         int[][] array = {{1,2,3},{4,5,6}};
 
         int[][] array2 = new int[2][];//可以省略列
@@ -51,35 +51,70 @@ public class TestDemo {
     }
 
 
-public static int binarySearch(int[] array, int key){
+//public static int binarySearch(int[] array, int key){
+//        int left = 0;
+//        int right = array.length - 1;
+//        while(left <= right){//以下是一趟二分查找，所以要循环
+//            int mid = (left + right) / 2;
+//            if(array[mid] < key){
+//                left = mid + 1;
+//            }
+//            else if(array[mid] == key){
+//                return mid;
+//            }
+//            else{
+//                right = mid - 1;
+//            }
+//        }
+//        //走到这里，left > right
+//        return -1;//负数即可，数组没有负数下标
+//}
+//
+//
+//    public static void main1(String[] args) {
+//        int[] array = {1,2,3,4,5,6,7,8,9,10};
+//        int key = 7;
+//        int index =  binarySearch(array, key);//创建一个变量接收 方法返回来的下标
+//        if(index == -1){
+//            System.out.println("没有你要找的关键字~ ");
+//        }
+//        else{
+//            System.out.println("找到了，下标是: " + index);
+//        }
+//
+//    }
+
+
+    public static int binarySearch(int[] array, int key){
         int left = 0;
-        int right = array.length - 1;
-        while(left <= right){//以下是一趟二分查找，所以要循环
-            int mid = (left + right) / 2;
+        int right = array.length -1;
+        while(left <= right){
+            int mid = (left + right) / 2;//要写在循环内，每趟2份查找重新定义中间位置
             if(array[mid] < key){
-                left = mid + 1;
+                left = mid +1;
             }
             else if(array[mid] == key){
-                return mid;
+                return mid;//找到了就返回下标
             }
             else{
-                right = mid - 1;
+                right = mid -1;
             }
         }
-        //走到这里，left > right
-        return -1;//负数即可，数组没有负数下标
-}
+        return -1;
+    }
 
 
-    public static void main1(String[] args) {
+
+
+    public static void main(String[] args) {
         int[] array = {1,2,3,4,5,6,7,8,9,10};
         int key = 7;
-        int index =  binarySearch(array, key);//创建一个变量接收 方法返回来的下标
+        int index = binarySearch(array,key);
         if(index == -1){
-            System.out.println("没有你要找的关键字~ ");
+            System.out.println("找不到");
         }
         else{
-            System.out.println("找到了，下标是: " + index);
+            System.out.println("找到了" + index);
         }
 
     }
