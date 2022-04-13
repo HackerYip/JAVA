@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1de88b3-81e5-48c0-919c-063199ad9288" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Test_2022_04_13/src/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Test_2022_04_13/src/TestDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Test_2022_04_14/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Test_2022_04_14/TeatDemo3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TeatDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeatDemo3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649854788907</updated>
       <workItem from="1649854790201" duration="2951000" />
+      <workItem from="1649861795148" duration="1930000" />
     </task>
     <servers />
   </component>
@@ -72,5 +72,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
