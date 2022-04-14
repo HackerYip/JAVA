@@ -56,7 +56,8 @@ class Student{
 
 public class TeatDemo3 {//重构的时候，要用工具重构，并且如果一个java文件内存在多个类的话，重构会报 错
 
-    public static void main(String[] args) {
+
+    public static void main1(String[] args) {
 
         //只要实例化一个对象，那么就会在堆上给对象开辟一块内存
         //当成员变量没有赋初值的时候，每个成员变量都是他所对应的0值
