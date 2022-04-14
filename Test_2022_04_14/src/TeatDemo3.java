@@ -57,11 +57,38 @@ class Student{
     //  2.调用合适的构造方法
     //必须会有这两步，但不一定只有这两步
     //构造方法可以有多个
+    //当程序当中 没有构造方法的时候，编译器会帮我们 默认提供一个不带参数的构造方法
+    //如果你写上了构造方法，编译器就不会再帮你 默认提供一个不带参数的构造方法
+
+
+
+
+
+
+    //1.构造方法 是没有返回值的方法，方法名和类名是一样的
+    //2. 构造方法 不至一个，可以有多个，多个构造方法之间，构成了重载
+    //3.当我们写了一个类后，没有写构造方法的时候，编译器会帮我们默认生成一个不带参数的构造方法
+    //4.当我们写了一个构造方法之后，编译器你不再为我们，提供不带参数的构造方法
+    //5.一个类 至少会有1个构造方法就算你没写！
+    //6.构造方法 本质就是实例化对象
+
 
 public Student(){
     System.out.println("这个是不带参数的构造方法");
 }
 
+    public Student(String name,int age){
+        System.out.println("这个是不带参数的构造方法");
+        this.name = name;
+        this.age = age;
+    }//重载了
+
+    public Student(String name, int age, double score, String sex) {
+        this.name = name;
+        this.age = age;
+        this.score = score;
+        this.sex = sex;
+    }
 
     public void doClass(){
         System.out.println(name + "正在上课");
