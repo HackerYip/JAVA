@@ -19,21 +19,7 @@ class Person{
     }
 }
 
-class Student{
-    public String name;
-    public int age;
-    public double score;
-    public String sex;
 
-
-
-    public void doClass(){
-        System.out.println("上课");
-    }
-    public void doHomeWork(){
-        System.out.println("写作业");
-    }
-}
 
 
 class MyGirlFriend{
@@ -45,9 +31,59 @@ class MyGirlFriend{
     }
 }
 
-public class TeatDemo3 {
-    Person person = new Person();//实例化一个对象[通过new关键字来创建了一个对象]
-    Person person2 = new Person();//通过new关键字可以
-    Student student1 = new Student();//学生 对象/实体   上面的只是描述一个学生出来，并没有真正产生一个学生
-    MyGirlFriend myGirlFriend = new MyGirlFriend();//实例化女朋友
+
+class Student{
+    public String name;
+    public int age;
+    public double score;
+    public String sex;
+
+
+
+    public void doClass(){
+        System.out.println(name + "正在上课");
+    }
+    public void doHomeWork(){
+        System.out.println(name + "写作业");
+    }
+
+    public void show(){
+        System.out.println("姓名 "+ name + "年龄 "+ age + "学分 "+ score + "性别 " + sex);
+    }
+
+}
+
+
+public class TeatDemo3 {//重构的时候，要用工具重构，并且如果一个java文件内存在多个类的话，重构会报 错
+
+    public static void main(String[] args) {
+
+        //只要实例化一个对象，那么就会在堆上给对象开辟一块内存
+        //当成员变量没有赋初值的时候，每个成员变量都是他所对应的0值
+        //引用类型对应的是null
+
+        //类名   变量  = new  类名()          实例化对象/创建一个对象
+        Person person = new Person();//实例化一个对象[通过new关键字来创建了一个对象]
+        Person person2 = new Person();//通过new关键字可以
+        Student student = new Student();//学生 对象/实体   上面的只是描述一个学生出来，并没有真正产生一个学生
+        MyGirlFriend myGirlFriend = new MyGirlFriend();//实例化女朋友
+
+        student.age = 10;//通过student这个引用对象使用点号 引用/指向/访问到堆上的name age sex
+        student.name = "bit";
+        student.score = 10.9;
+        student.sex = "男";
+        student.doClass();
+        student.doHomeWork();
+        student.show();
+        System.out.println("==========================");
+
+        Student student2 = new Student();
+        student2.name = "bolin";
+        student2.age = 23;
+        student2.score = 100;
+        student2.sex = "男";
+        student2.doClass();
+        student2.doHomeWork();
+        student2.show();
+    }
 }
