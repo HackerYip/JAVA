@@ -38,6 +38,26 @@ class Student{
     public double score;
     public String sex;
 
+//    public String name = "bit";
+//    public int age = 10;
+//    public double score;
+//    public String sex;
+//    写死了，叫就地初始化
+
+
+
+
+//构造方法非常特殊
+    //1.方法名必须和类名是一样的
+    //2.没有返回值
+
+    //构造方法用来干嘛呢：
+    //当我们实例化一个对象的时候：
+    //1.为对象分配内存
+    //2.
+public Student(){
+    System.out.println("这个是不带参数的构造方法");
+}
 
 
     public void doClass(){

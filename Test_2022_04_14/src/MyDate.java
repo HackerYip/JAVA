@@ -14,14 +14,28 @@ public class MyDate {
     }
 
     public void printDate(MyDate this){
-        System.out.println("年 "+ year + "月 "+ month + "日 "+day);
+        System.out.println("年 "+ this.year + "月 "+ this.month + "日 "+ this.day);
     }
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         MyDate myDate = new MyDate();
         myDate.setDate(2022,3,25);
         myDate.printDate();
     }
+
+    //this.date //访问成员变量
+    //this.func()//访问成员方法
+    //this();  //调用构造方法
+
+
+    public static void main(String[] args) {
+
+
+
+    }
+
+
+
 
 
 }
