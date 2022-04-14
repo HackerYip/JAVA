@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1de88b3-81e5-48c0-919c-063199ad9288" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/Test_2022_04_14/Person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Test_2022_04_14/TeatDemo3.class" afterDir="false" />
+    <list default="true" id="d1de88b3-81e5-48c0-919c-063199ad9288" name="Changes" comment="20220414面向对象">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TeatDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeatDemo3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +54,17 @@
       <option name="presentableId" value="Default" />
       <updated>1649854788907</updated>
       <workItem from="1649854790201" duration="2951000" />
-      <workItem from="1649861795148" duration="1930000" />
+      <workItem from="1649861795148" duration="2936000" />
+      <workItem from="1649908158045" duration="2078000" />
     </task>
+    <task id="LOCAL-00001" summary="20220414面向对象">
+      <created>1649866626985</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649866626985</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,5 +81,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20220414面向对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="20220414面向对象" />
   </component>
 </project>
