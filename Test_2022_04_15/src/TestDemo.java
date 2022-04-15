@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Date;
 
 class Person{
     private String name;
@@ -17,7 +18,7 @@ class Person{
 
     //import java.util.Arrays;
     //相当于C的include
-    //
+    //import java.util.*;还可以这样，表示导入util包内所有，但是只有使用对应的时候才会加载对应的源码
 
 
     private void sleep(){
@@ -45,8 +46,19 @@ public class TestDemo {
     // 封装
 
     public static void main(String[] args) {
+
+        double result = Math.sqrt(Math.pow(3,2) + Math.pow(4,2));
+        System.out.println(result);
+    }
+
+
+    public static void main3(String[] args) {
         int[] array = {1,2,3};
         System.out.println(Arrays.toString(array));
+        java.util.Date date = new java.util.Date();//指定导包，可以避免两个不同的包有同样的date
+        //或者 Date date = new Date;//不指定导包
+        System.out.println(date.getTime());
+
     }
 
 
