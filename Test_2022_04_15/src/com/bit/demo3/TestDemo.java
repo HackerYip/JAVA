@@ -1,6 +1,19 @@
 package com.bit.demo3;
 
 
+public class HasStatic {// 1
+    private static int x = 100;// 2
+    public static void main(String args[]) {// 3
+        HasStatic hsl = new HasStatic();// 4
+        hsl.x++;// 5
+        HasStatic hs2 = new HasStatic();// 6
+        hs2.x++;// 7
+        hsl = new HasStatic();// 8
+        hsl.x++;// 9
+        HasStatic.x--;// 10
+        System.out.println(" x=" + x);// 11
+    }
+
 
 class Student{
     private String name;//没有强制规定什么时候用private或者public
@@ -66,4 +79,14 @@ public class TestDemo {
         //静态的成员变量和静态的成员方法，都不依赖于对象来调用，因为他们是类变量，通过类名来访问的
         //静态的成员方法当中，不能访问非静态的成员（包括成员变量和成员方法）。非静态的成员变量依赖对象
     }
+
+
+    //代码块
+    //1.实例代码块/构造代码块
+    //2.静态代码块，只执行一次，不管实例化多少个对象，它也是执行一次
+    //3.本地代码块/普通代码块，一般用不上
+    //4.同步代码块，目前用不到
+
+//1.实例代码块优先于构造方法执行。从字节码角度来看，是吧实例代码块当中的内容，拷贝到了构造方法之前
+
 }
