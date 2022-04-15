@@ -1,4 +1,19 @@
 package com.bit.demo3;
+public class Test{
+
+    private float f=1.0f;
+
+    int m=12;
+
+    static int n=1;
+
+    public static void main(String args[]){
+
+        Test t=new Test();
+
+    }
+
+}
 
 class Test{
 
@@ -13,14 +28,10 @@ class Test{
 }
 
 
-
-
     public static void main(String[] args) {
 
         System.out.println(new Test());
     }
-
-
 
 public class TestDemo{
 
