@@ -1,5 +1,27 @@
 package com.bit.demo3;
 
+class Test{
+
+    public String toString() {
+
+        System.out.print("aaa");
+
+        return "bbb";
+
+    }
+
+}
+
+
+
+
+    public static void main(String[] args) {
+
+        System.out.println(new Test());
+    }
+
+
+
 public class TestDemo{
 
     private int count;
