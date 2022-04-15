@@ -1,5 +1,26 @@
 package com.bit.demo3;
 
+public class TestDemo{
+
+    private int count;
+
+    public static void main(String[] args) {
+
+        TestDemo test=new TestDemo(88);
+
+        System.out.println(test.count);
+
+    }
+
+    TestDemo(int a) {
+
+        count=a;
+
+    }
+
+}
+
+
 public class Pvf{
     static boolean Paddy;
     public static void main(String args[]){
