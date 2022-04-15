@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1de88b3-81e5-48c0-919c-063199ad9288" name="Changes" comment="20220414面向对象">
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_15/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_15/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_15/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_15/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_15/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_15/Test_2022_04_15.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_15/src/TestDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TeatDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TeatDemo3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Test_2022_04_14/TeatDemo3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Test_2022_04_14/TeatDemo3.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +39,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="TeatDemo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TeatDemo3" />
       <module name="Test_2022_04_14" />
@@ -40,8 +49,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="Test_2022_04_14" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.TeatDemo3" />
       </list>
     </recent_temporary>
@@ -56,7 +73,8 @@
       <updated>1649854788907</updated>
       <workItem from="1649854790201" duration="2951000" />
       <workItem from="1649861795148" duration="2936000" />
-      <workItem from="1649908158045" duration="12754000" />
+      <workItem from="1649908158045" duration="19486000" />
+      <workItem from="1650007695424" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="20220414面向对象">
       <created>1649866626985</created>
@@ -128,11 +146,29 @@
       <option name="project" value="LOCAL" />
       <updated>1649924277480</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="20220414面向对象">
+      <created>1649927018200</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649927018200</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
