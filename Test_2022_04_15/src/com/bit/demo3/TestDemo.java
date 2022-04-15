@@ -1,5 +1,13 @@
 package com.bit.demo3;
 
+public class Pvf{
+    static boolean Paddy;
+    public static void main(String args[]){
+        System.out.println(Paddy);
+    }
+}
+
+
 public class Test {
     public int aMethod(){
         static int i = 0;
