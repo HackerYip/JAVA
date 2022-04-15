@@ -1,5 +1,20 @@
 package com.bit.demo3;
 
+
+package NowCoder;
+class Test {
+    public static void hello() {
+        System.out.println("hello");
+    }
+}
+public class MyApplication {
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Test test=null;
+        test.hello();
+    }
+}
+
 public class Test{
     static int cnt = 6;
     static{
