@@ -32,6 +32,10 @@ class Cat extends Animal{
     public String hair;
 
 
+    public void eat() {
+        System.out.println(this.name + "吃猫粮！");
+    }
+
     public void mew(){
         System.out.println(this.name + "正在叫");
     }
@@ -60,7 +64,7 @@ public class TestDemo {
 
         Animal animal = new Cat();//这就是向上转型
         animal.name = "mimi";
-        animal.eat();
+        animal.eat();//为什么调用子类的？？实际上编译的时候，这里还是Animal的eat()
         //animal.mew();//只能点到eat()，只能访问父类自己的特有的成员
     }
 
