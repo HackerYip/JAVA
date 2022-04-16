@@ -14,7 +14,7 @@ class Teacher{
     private Money money;
 }
 
-class School{
+class School{//组合
     public Student[] students;
     public Teacher[] teachers;
 
