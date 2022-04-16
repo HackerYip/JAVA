@@ -28,6 +28,7 @@ class Animal{
     }
 }
 
+
 class Cat extends Animal{
     public String hair;
 
@@ -41,9 +42,52 @@ class Cat extends Animal{
     }
 }
 
+class Dog extends Animal{
+
+    public void eat(){
+        System.out.println(this.name + "吃狗粮");
+    }
+
+}
+
+class Bird extends Animal{
+
+    public void eat(){
+        System.out.println(this.name + "吃鸟粮");
+    }
+
+    public void fly(){
+        System.out.println("正在飞！");
+
+    }
+}
 
 public class TestDemo {
 
+    public static void main(String[] args) {
+
+
+    }
+
+    public static void main5(String[] args) {
+        Animal animal = new Bird();
+        //animal.fly();//不能
+        Bird bird = (Bird)animal;//向下转型，不安全
+        bird.fly();
+    }
+
+
+    public static void function(Animal animal){
+        animal.eat();
+    }
+
+    public static void main4(String[] args) {
+        Cat cat = new Cat();
+        Dog dog = new Dog();
+
+        function(cat);
+        function(dog);
+    }
     public static void func(Animal animal){
 
     }
@@ -53,7 +97,7 @@ public class TestDemo {
         return new Cat();//向上转型的第三种方式
     }
 
-    public static void main(String[] args) {
+    public static void main3(String[] args) {
         Cat cat = new Cat();
         func(cat);//也发生了向上转型
     }
