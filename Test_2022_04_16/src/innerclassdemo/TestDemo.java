@@ -22,6 +22,9 @@ class OuterClass{
         //OuterClass.this.对象
         //实例内部类当中，不仅包含了自己的this，而且包含了外部类的this
 
+        //4.不能包含静态方法
+
+
         public int data4 = 40;
         private int data5 = 50;
 
