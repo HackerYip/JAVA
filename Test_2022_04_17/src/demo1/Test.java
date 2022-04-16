@@ -4,6 +4,14 @@ class Animal{
     private String name;
     private int age;
 
+    static{
+        System.out.println("Animal的静态代码块！");
+    }
+
+    {
+        System.out.println("Animal的实例代码块！");
+    }
+
     public Animal(){
 
     }
@@ -41,6 +49,14 @@ class Cat extends Animal{//上面写了构造方法初始化的话，这里会�
     //当构造子类的时候，一定要先帮助父类进行构造
 
     public String hair;
+
+    static{
+        System.out.println("Cat的静态代码块！");
+    }
+
+    {
+        System.out.println("Cat的实例代码块！");
+    }
 
     public Cat(){
         super();
