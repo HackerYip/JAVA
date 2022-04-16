@@ -23,6 +23,9 @@ package inheritancedemo;
 
             method();
             method(10);//重载
+            //重载确实要发生在同一个类当中，但是在继承中，也是可以的
+
+
             System.out.println(a);//如果重名了，优先访问子类自己的
             System.out.println(super.a);//想要访问父类，就用super，写代码的时候 让这个更易读
             System.out.println(this.b);//super也可以，this也可以，但是this是abcd整体，所以重名的时候用super来区分拿出父类

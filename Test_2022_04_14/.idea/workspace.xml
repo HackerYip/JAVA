@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1de88b3-81e5-48c0-919c-063199ad9288" name="Changes" comment="20220414面向对象">
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/inheritancedemo/Animal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/inheritancedemo/Base.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/inheritancedemo/Cat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/inheritancedemo/Derived.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/inheritancedemo/Dog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/inheritancedemo/TestDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/inheritancedemo/TestDemo2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/innerclassdemo/OuterClass$InnerClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/innerclassdemo/OuterClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/innerclassdemo/OuterClass2$InnerClass.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/innerclassdemo/OuterClass2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/innerclassdemo/TestDemo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/out/production/Test_2022_04_16/innerclassdemo/TestDemo2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/src/inheritancedemo/TestDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/src/inheritancedemo/TestDemo3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Test_2022_04_16/src/inheritancedemo/TestDemo3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Test_2022_04_16/src/inheritancedemo/TestDemo3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
