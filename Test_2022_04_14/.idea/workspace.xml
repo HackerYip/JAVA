@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d1de88b3-81e5-48c0-919c-063199ad9288" name="Changes" comment="20220414面向对象">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_2022_04_17/out/production/Test_2022_04_17/B.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Test_2022_04_17/out/production/Test_2022_04_17/B.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Test_2022_04_17/out/production/Test_2022_04_17/TestDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Test_2022_04_17/out/production/Test_2022_04_17/TestDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Test_2022_04_17/src/demo1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Test_2022_04_17/src/demo1/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

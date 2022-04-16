@@ -1,7 +1,7 @@
 package demo1;
 
-class Animal{
-    private String name;
+class Animal{//如果前面加上final，即为不能继承，同样可以用在变量和方法上
+    protected String name;//protect 1.同一个包同一个类可以访问  2.同一个包不同类也可以访问
     private int age;
 
     static{
@@ -76,6 +76,9 @@ class Cat extends Animal{//上面写了构造方法初始化的话，这里会�
     }
 }
 public class Test {
+
+    protected int k = 99;
+
     public static void main(String[] args) {
         Cat cat1 = new Cat("mimi",12,"black");//同样是遵循1.静态 2.实例 3.构造
 
