@@ -44,7 +44,7 @@ class OuterClass{
 }
 
 public class TestDemo {
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
 
         //内部类：一个类的内部，定义的类叫做内部类
         //1.实例内部类

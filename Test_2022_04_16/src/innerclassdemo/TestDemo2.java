@@ -51,9 +51,16 @@ class OuterClass2{
 
 public class TestDemo2 {
 
-    public static void main(String[] args) {
+    public static void main3(String[] args) {
         //不需要外部类对象，所以，静态内部类使用的频率会比较高，看场景
         OuterClass2.InnerClass innerClass = new OuterClass2.InnerClass();//等号右边用外部类类名.即可，因为这是静态的
         innerClass.method();
     }
 }
+
+
+
+
+
+
+
