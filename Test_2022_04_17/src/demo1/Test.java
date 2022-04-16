@@ -77,7 +77,7 @@ class Cat extends Animal{//上面写了构造方法初始化的话，这里会�
 }
 public class Test {
     public static void main(String[] args) {
-        Cat cat1 = new Cat("mimi",12,"black");
+        Cat cat1 = new Cat("mimi",12,"black");//同样是遵循1.静态 2.实例 3.构造
 
         System.out.println("=================================");
 
