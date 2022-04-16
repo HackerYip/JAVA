@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1de88b3-81e5-48c0-919c-063199ad9288" name="Changes" comment="20220414面向对象">
-      <change beforePath="$PROJECT_DIR$/../Test_2022_04_16/src/innerclassdemo/TestDemo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Test_2022_04_16/src/innerclassdemo/TestDemo2.java" afterDir="false" />
-    </list>
+    <list default="true" id="d1de88b3-81e5-48c0-919c-063199ad9288" name="Changes" comment="20220414面向对象" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
