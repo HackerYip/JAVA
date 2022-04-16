@@ -44,6 +44,7 @@ class OuterClass2{
             System.out.println(out.data2);
             System.out.println(out.data3);
             System.out.println(data4);
+
         }
     }
 }
