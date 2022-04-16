@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1de88b3-81e5-48c0-919c-063199ad9288" name="Changes" comment="20220414面向对象">
-      <change beforePath="$PROJECT_DIR$/../Test_2022_04_15/src/com/bit/demo3/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Test_2022_04_15/src/com/bit/demo3/TestDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test_2022_04_16/src/innerclassdemo/TestDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,12 +25,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="27kCe0IqNLfym5e2794BxTAhVSV" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -65,7 +73,7 @@
       <workItem from="1649854790201" duration="2951000" />
       <workItem from="1649861795148" duration="2936000" />
       <workItem from="1649908158045" duration="19486000" />
-      <workItem from="1650007695424" duration="623000" />
+      <workItem from="1650007695424" duration="3123000" />
     </task>
     <task id="LOCAL-00001" summary="20220414面向对象">
       <created>1649866626985</created>
@@ -174,6 +182,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="20220414面向对象" />
     <option name="LAST_COMMIT_MESSAGE" value="20220414面向对象" />
   </component>
