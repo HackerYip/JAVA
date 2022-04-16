@@ -13,12 +13,13 @@ class Animal{
     }
 
     public Animal(){
-
+        System.out.println("Animal不带参数的构造方法");
     }
 
     public Animal(String name, int age) {
         this.name = name;
         this.age = age;
+        System.out.println("Animal带2个参数的构造方法");
     }
 
     public String getName() {
@@ -60,10 +61,12 @@ class Cat extends Animal{//上面写了构造方法初始化的话，这里会�
 
     public Cat(){
         super();
+        System.out.println("Cat不带参数的构造方法");
     }
     public Cat(String name,int age,String hair){
         super(name,age);//显示调用父亲的构造方法，来初始化 子类从父类继承过来的东西
         this.hair = hair;
+        System.out.println("Cat带3个参数的构造方法");
     }
 
     public void mew(){
@@ -73,8 +76,17 @@ class Cat extends Animal{//上面写了构造方法初始化的话，这里会�
     }
 }
 public class Test {
-
     public static void main(String[] args) {
+        Cat cat1 = new Cat("mimi",12,"black");
+
+        System.out.println("=================================");
+
+        Cat cat2 = new Cat("mimi",12,"black");//这次的输出结果就不一样了，因为静态只执行一次
+
+    }
+
+
+    public static void main11(String[] args) {
         Cat cat1 = new Cat("mimi",12,"black");
         cat1.setName("mimi");
         cat1.mew();
