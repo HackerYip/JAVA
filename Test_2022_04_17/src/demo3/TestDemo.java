@@ -6,16 +6,18 @@ package demo3;
     //1.向上转型 ①直接赋值 ②方法的参数 ③方法的返回值
     //
     //2.方法重写 ①静态方法不能进行重写 ②private方法不能进行重写 ③子类的访问修饰限定符要大于等于父类 ④被final修饰的方法。也不可以被重写
+    //
     //3.多态
     //
+    //向下转型 不安全
     //
     //
     //
     //
     //
     //
-    //
-    //
+
+
 
 
 class Animal{
@@ -65,8 +67,11 @@ class Bird extends Animal{
 public class TestDemo {
 
     public static void main(String[] args) {
-
-
+        Animal animal = new Cat();
+        if(animal instanceof Bird) {//这句话的意思是：这个引用 引用的对象是不是一个Bird的实例。（上一行代码是猫）
+            Bird bird = (Bird) animal;//报错
+            bird.fly();
+        }
     }
 
     public static void main5(String[] args) {
