@@ -42,12 +42,20 @@ class Triangle extends Shape{
     }
 }
 
+class Flower extends Shape{
+    @Override
+    public void draw() {
+        System.out.println("❀");
+    }
+}
+
 
 
 public class TestDemo {
 public static void drawMap(Shape shape){
     shape.draw();
 }
+
 
 
 
