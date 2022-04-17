@@ -72,6 +72,15 @@ class Student2{
         }
     }
 
+
+class StringComparator implements Comparable<Student>{
+
+    @Override
+    public int compareTo(Student o1,Student o2) {
+        return o1.name.compareTo(o2.name);
+    }
+}
+
 public class Test {
 
 
@@ -84,6 +93,11 @@ public class Test {
         AgeComparator ageComparator = new AgeComparator();
 
         Arrays.sort(students,ageComparator);//可以传第二个参数，比较器，决定排序类型
+
+        StringComparator StringComparator = new StringComparator();
+
+        Arrays.sort(students,StringComparator);
+
         System.out.println(Arrays.toString(students));
     }
 }
