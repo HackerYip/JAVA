@@ -55,7 +55,7 @@ class Dog extends Animal implements IRunning,ISwimming{
     }
 }
 
-class Robot extends
+//class Robot extends
 
 public class Test {
 
@@ -64,9 +64,9 @@ public class Test {
         iRunning.run();
     }
 
-    public static void main(String[] args) {
-        walk();
-    }
+//    public static void main(String[] args) {
+//        walk();
+//    }
 
 
 

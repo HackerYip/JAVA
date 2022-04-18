@@ -63,7 +63,7 @@ class Student2{
                 '}';
     }
 
-    //比较器
+/*    //比较器
     class AgeComparator implements Comparable<Student>, Comparator<T> {
 
         @Override
@@ -78,12 +78,12 @@ class StringComparator implements Comparable<Student>{
     @Override
     public int compareTo(Student o1,Student o2) {
         return o1.name.compareTo(o2.name);
-    }
+    }*/
 }
 
 public class Test {
 
-
+/*
     public static void main(String[] args) {
         Student[] students = new Student[3];
         students[0] = new Student("zhangsan",18,78.9);
@@ -99,8 +99,8 @@ public class Test {
         Arrays.sort(students,StringComparator);
 
         System.out.println(Arrays.toString(students));
-    }
-}
+    }*/
+//}
 
     public static void main1(String[] args) {
         Student student1 = new Student("zhangsan",18,78.9);
