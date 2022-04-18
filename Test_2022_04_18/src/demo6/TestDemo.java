@@ -18,7 +18,7 @@ class Person implements Cloneable{
     public String toString() {
         return "Person{" +
                 "id='" + id + '\'' +
-                '}';
+                '}'
     }
 
     @Override
