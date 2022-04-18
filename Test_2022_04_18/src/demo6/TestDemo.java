@@ -29,6 +29,11 @@ public class TestDemo {
         //2.
         Person person1 = new Person();
         Person person2 = (Person) person1.clone();//这里clone()的返回值是Object类的，是一个父类，把父类给了子类，要强转
-        System.out.println(person2);
+        //System.out.println(person2);
+        System.out.println(person1.m.money);
+        System.out.println(person2.m.money);
+        System.out.println("=======================");
+
+        person2.m.money = 99.99;
     }
 }
