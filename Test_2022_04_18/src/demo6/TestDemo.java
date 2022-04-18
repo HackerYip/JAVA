@@ -41,7 +41,7 @@ public class TestDemo {
         //System.out.println(person2);
         System.out.println(person1.m.money);
         System.out.println(person2.m.money);
-        System.out.println("=======================")
+        System.out.println("=======================");
 
         person2.m.money = 99.99;//浅拷贝，会影响对象
 
