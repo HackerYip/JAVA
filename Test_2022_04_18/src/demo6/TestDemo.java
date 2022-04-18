@@ -34,6 +34,9 @@ public class TestDemo {
         System.out.println(person2.m.money);
         System.out.println("=======================");
 
+        System.out.println(person1.m.money);
+        System.out.println(person2.m.money);
+
         person2.m.money = 99.99;
     }
 }
