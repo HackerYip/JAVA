@@ -53,15 +53,4 @@ public class Book {
     public void setBorrowed(boolean borrowed) {
         isBorrowed = borrowed;
     }
-
-    @Override
-    public String toString() {
-        return "Book{" +
-                "name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                ", age=" + age +
-                ", type='" + type + '\'' +
-                ", isBorrowed=" + isBorrowed +
-                '}';
-    }
 }
