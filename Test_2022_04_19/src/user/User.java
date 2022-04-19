@@ -1,6 +1,6 @@
 package user;
 
-public class User {
+public abstract class User {
     protected String name;//共性写在这
     //防止在其他包也要继承到，所以用protect
 
@@ -8,7 +8,5 @@ public class User {
         this.name = name;
     }
 
-    public void menu(){
-
-    }
+    public abstract void menu();
 }
