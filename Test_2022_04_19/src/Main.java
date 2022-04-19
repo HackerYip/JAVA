@@ -28,6 +28,7 @@ public class Main {
             int choice = user.menu();
             //user引用了哪个对象？
             //选择了1之后，调用的是user引用的对象的具体操作，这个怎么做？
+            //
         }
     }
 }
