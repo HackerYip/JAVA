@@ -8,5 +8,5 @@ public abstract class User {
         this.name = name;
     }
 
-    public abstract void menu();
+    public abstract int menu();
 }

@@ -24,6 +24,10 @@ public class Main {
     public static void main(String[] args) {
 
         User user = login();//user到底引用哪个对象，需要看
-        user.menu();
+        while(true) {
+            int choice = user.menu();
+            //user引用了哪个对象？
+            //选择了1之后，调用的是user引用的对象的具体操作，这个怎么做？
+        }
     }
 }
