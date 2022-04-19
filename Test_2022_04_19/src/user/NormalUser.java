@@ -1,5 +1,8 @@
 package user;
 
-public class NormalUser {
+public class NormalUser extends User{
 
+    public NormalUser(String name) {
+        super(name);
+    }
 }
