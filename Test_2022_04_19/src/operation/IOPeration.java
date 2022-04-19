@@ -1,5 +1,7 @@
 package operation;
 
-public interface IOPeration {
+import book.BookList;
 
+public interface IOPeration {
+    void work(BookList bookList);
 }
