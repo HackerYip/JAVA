@@ -1,6 +1,22 @@
+import java.util.Locale;
+
 public class TsetDemo {
 
-    public static void main(String[] args) {
+
+
+
+
+    public static void main3(String[] args) {
+        String s = "hello";
+        String s2 = s.toUpperCase();
+        System.out.println(s2);//引用新对象
+
+        //小写Lower
+    }
+
+
+
+    public static void main2(String[] args) {
         int a = 10;
         String str = String.valueOf(a);
         System.out.println(str);//就会把10变成字符串10
@@ -8,7 +24,10 @@ public class TsetDemo {
 
         String str2 = "1234";
         int ret = Integer.valueOf(str2);
+        int ret2 = Integer.parseInt(str2);
+
         System.out.println(ret+1);
+        System.out.println(ret2+1);
     }
 
 
