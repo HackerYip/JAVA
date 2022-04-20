@@ -4,6 +4,18 @@ import java.util.Locale;
 public class TsetDemo {
 
     public static void main(String[] args) {
+        String str = "abcabcbcaabcabc";
+        String str2 = str.replace('a','m');
+        //记住所有的替换，java里面所有对字符串的操作都会产生新的对象，所以这里并不会在原来这个str字符串里面把字符修改了
+        //而是重新生成了个对象，在这个新的对象里面把字符修改了，原来的不变
+        //以下可以打印证实一下
+        System.out.println(str);
+        System.out.println(str2);
+
+    }
+
+
+    public static void main5(String[] args) {
         //以格式化的形式 转变为字符串
 
         String s = String.format("%d-%d-%d",2019,9 ,14);
