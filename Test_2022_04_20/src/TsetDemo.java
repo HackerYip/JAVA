@@ -8,7 +8,8 @@ public class TsetDemo {
         //其实就是StringTable
         //StringTable就是一个哈希表
         //什么是哈希表
-        //
+        //只要是双引号引起来的元素，全部存放在常量池当中，且只有1份
+        //在存放的时候，先去常量池检查，是否存在这个常量
         String str1 = "hello";
         String str2 = "hello";
 
