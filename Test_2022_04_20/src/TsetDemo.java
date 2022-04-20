@@ -10,10 +10,13 @@ public class TsetDemo {
 
 
     public static void main16(String[] args) {
+
         //String str = "hello";
         final int[] array = {1,2,3,4};
-        array = new int[]{1,2,3,4,5 };//用了final代表array这个指向不能改变
+        //array = new int[]{1,2,3,4,5 };//用了final代表array这个指向不能改变
         array[0] = 99;
+
+
         //private final char value[];
         //证明value这个引用的指向不能发生改变
         //String str = "hello"
