@@ -4,6 +4,13 @@ import java.util.Locale;
 public class TsetDemo {
 
     public static void main(String[] args) {
+        //以格式化的形式 转变为字符串
+
+        String s = String.format("%d-%d-%d",2019,9 ,14);
+        System.out.println(s);
+    }
+
+    public static void main4(String[] args) {
         String s = "hello";
         char[] chars = s.toCharArray();
         System.out.println(Arrays.toString(chars));
