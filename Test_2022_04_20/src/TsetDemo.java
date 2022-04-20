@@ -16,6 +16,16 @@ public class TsetDemo {
         String str3 = new String("hello");
         System.out.println(str1 == str3);//false
         System.out.println(str1 == str2);//true
+
+        String str4= "world";//常量池就是这样，每次存都往常量池里面找
+
+        //池化技术运用非常广，为了合理利用资源，不必频繁创建销毁
+        //1.数据库连接池
+        //2.线程池
+        //3.
+
+
+
     }
 
 
