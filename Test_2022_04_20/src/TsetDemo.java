@@ -3,7 +3,19 @@ import java.util.Locale;
 
 public class TsetDemo {
 
-    public static void main(String[] args) {//多次拆分
+    public static void main(String[] args) {
+        String str = "abcabcabcbcabca";
+
+        String ret = str.substring(2);//截取2以及2以后
+        System.out.println(ret);
+
+        String ret2 = str.substring(2,7);//截取2到7下标
+        System.out.println(ret2);
+    }
+
+
+
+    public static void main10(String[] args) {//多次拆分
         String str = "name=zhangsan&age=18";
         String[] strings = str.split("&");
         for(String s : strings){
