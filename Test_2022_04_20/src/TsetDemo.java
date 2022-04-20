@@ -4,9 +4,26 @@ import java.util.Locale;
 public class TsetDemo {
 
     public static void main(String[] args) {
+        //String str = "hello";
+        final int[] array = {1,2,3,4};
+        array = new int[]{1,2,3,4,5 };//用了final代表array这个指向不能改变
+        array[0] = 99;
+        //private final char value[];
+        //证明value这个引用的指向不能发生改变
+        //String str = "hello"
+        //这里不能将h改为H是因为private，没有提供get和set方法
+        //所以所有操作字符串都要new
+        //注意！
+        //final修饰类表明该类不想被继承，final修饰引用类型表明该引用变量不能引用其他对象，但是其引用对象中的内容是可以修改的
+    }
+
+
+
+    public static void main15(String[] args) {
         char[] ch = new char[]{'a','b','c'};
         String str = new String(ch);
-
+        str.intern();//加上这行代码就是true了
+        //这行代码做的事，当常量池没有的时候，手动入池
         String str2 = "abc";
 
         System.out.println(str == str2);
