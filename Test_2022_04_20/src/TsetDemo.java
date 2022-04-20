@@ -4,6 +4,20 @@ import java.util.Locale;
 public class TsetDemo {
 
     public static void main(String[] args) {
+        String str = "name=zhangsan&age=18";
+        String[] strings = str.split("&");
+        for(String s : strings){
+            String[] s1 = s.split("=");//分割之后又是一个数组
+            for(String x : s1) {
+                System.out.println(x);
+            }
+        }
+    }
+
+
+
+
+    public static void main9(String[] args) {
         String str = "JAVA104\\BIT666";
         String[] strings = str.split("\\\\");
     }
