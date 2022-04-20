@@ -4,6 +4,26 @@ import java.util.Locale;
 public class TsetDemo {
 
     public static void main(String[] args) {
+        String str = "JAVA104 BIT&666";
+        String[] strings = str.split(" |&");//假设现在有多个分隔符分割，而且每个分隔符不一样，那么就以竖线|来作为连字符
+    }
+
+
+    public static void main7(String[] args) {
+        String str = "abc def gyh";//以空格分割
+        String[] strings = str.split(" ");//在分割的时候有些字符比较特殊，比如点号，要在前面加上转义字符，"\\."
+        //还有\,*,+
+
+        String[] strings = str.split(" ",2);//limit是最多规定他切多少次
+
+        for(String s : strings){
+            System.out.println(s);
+        }
+    }
+
+
+
+    public static void main6(String[] args) {
         String str = "abcabcbcaabcabc";
         String str2 = str.replace('a','m');
         //记住所有的替换，java里面所有对字符串的操作都会产生新的对象，所以这里并不会在原来这个str字符串里面把字符修改了
