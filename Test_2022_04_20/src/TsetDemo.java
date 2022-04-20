@@ -7,14 +7,16 @@ public class TsetDemo {
         String str1 = "hello";
 
         String ret = "he"+"llo";//二者均为常量， 在编译的时候，这里就直接认为是hello
-        System.out.println(ret == str1);
+        //System.out.println(ret == str1);
 
 
             String str2 = "he";
             String str3 = "llo";
             String str4 = str2+str3;
+            System.out.println(str1 == str4);//false,str2和str3是变量，在编译的时候，还不知道里面是谁
 
-            sout
+            //注意！
+            //只要是new 一定是有新对象产生的
 
     }
 
