@@ -3,7 +3,7 @@ import java.util.Locale;
 
 public class TsetDemo {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//多次拆分
         String str = "name=zhangsan&age=18";
         String[] strings = str.split("&");
         for(String s : strings){
