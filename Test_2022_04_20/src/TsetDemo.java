@@ -20,7 +20,7 @@ public class TsetDemo {
         String[] strings = str.split(" ");//在分割的时候有些字符比较特殊，比如点号，要在前面加上转义字符，"\\."
         //还有\,*,+
 
-        String[] strings = str.split(" ",2);//limit是最多规定他切多少次
+        String[] strings2 = str.split(" ",2);//limit是最多规定他切多少次
 
         for(String s : strings){
             System.out.println(s);
