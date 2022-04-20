@@ -4,6 +4,22 @@ import java.util.Locale;
 public class TsetDemo {
 
     public static void main(String[] args) {
+        String str1 = "hello";
+
+        String ret = "he"+"llo";//二者均为常量， 在编译的时候，这里就直接认为是hello
+        System.out.println(ret == str1);
+
+
+            String str2 = "he";
+            String str3 = "llo";
+            String str4 = str2+str3;
+
+            sout
+
+    }
+
+
+    public static void main13(String[] args) {
         //字符串常量池
         //其实就是StringTable
         //StringTable就是一个哈希表
