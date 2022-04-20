@@ -4,6 +4,17 @@ import java.util.Locale;
 public class TsetDemo {
 
     public static void main(String[] args) {
+        char[] ch = new char[]{'a','b','c'};
+        String str = new String(ch);
+
+        String str2 = "abc";
+
+        System.out.println(str == str2);
+    }
+
+
+
+    public static void main14(String[] args) {
         String str1 = "hello";
 
         String ret = "he"+"llo";//二者均为常量， 在编译的时候，这里就直接认为是hello
