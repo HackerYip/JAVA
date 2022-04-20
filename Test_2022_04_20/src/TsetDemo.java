@@ -4,6 +4,12 @@ import java.util.Locale;
 public class TsetDemo {
 
     public static void main(String[] args) {
+        String str = "JAVA104\\BIT666";
+        String[] strings = str.split("\\\\");
+    }
+
+
+    public static void main8(String[] args) {
         String str = "JAVA104 BIT&666";
         String[] strings = str.split(" |&");//假设现在有多个分隔符分割，而且每个分隔符不一样，那么就以竖线|来作为连字符
     }
