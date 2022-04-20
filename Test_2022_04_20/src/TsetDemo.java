@@ -13,6 +13,12 @@ public class TsetDemo {
         System.out.println(str);
         System.out.println(str2);
 
+
+        String str3 = str.replace("ab","mp");
+        String str4 = str.replaceFirst("ab","mp");
+
+        System.out.println(str3);
+        System.out.println(str4);
     }
 
 
