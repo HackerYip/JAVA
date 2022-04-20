@@ -3,13 +3,16 @@ import java.util.Locale;
 
 public class TsetDemo {
 
-    public static void main(String[] args) {
+
+
+
+    public static void main11(String[] args) {
         String str = "abcabcabcbcabca";
 
         String ret = str.substring(2);//截取2以及2以后
         System.out.println(ret);
 
-        String ret2 = str.substring(2,7);//截取2到7下标
+        String ret2 = str.substring(2,7);//截取2到6下标，因为左闭右开，不包含7下标，范围要合法，不然数组越界
         System.out.println(ret2);
     }
 
