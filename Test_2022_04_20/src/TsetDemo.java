@@ -3,7 +3,28 @@ import java.util.Locale;
 
 public class TsetDemo {
 
+    public static void main(String[] args) {
+        //字符串常量池
+        //其实就是StringTable
+        //StringTable就是一个哈希表
+        //什么是哈希表
+        //
+        String str1 = "hello";
+        String str2 = "hello";
 
+        String str3 = new String("hello");
+        System.out.println(str1 == str3);//false
+        System.out.println(str1 == str2);//true
+    }
+
+
+
+    public static void main12(String[] args) {
+        String str = "    abcabca    bcbcabca    ";
+
+        System.out.println(str.trim());//去掉左右空格，中间不去掉
+        System.out.println(str);
+    }
 
 
     public static void main11(String[] args) {
