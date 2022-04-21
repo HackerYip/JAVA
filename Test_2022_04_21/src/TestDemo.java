@@ -39,6 +39,7 @@ public class TestDemo {
             System.out.println(array2[9]);//数组越界
             System.out.println("hahahah，这里没有执行");//这行代码及以下都不会执行
         }catch(ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();//打印以下异常信息
             System.out.println("捕获到了一个数组越界的异常！！可以发给你一个邮件，告知你原因");
         }
         System.out.println("其他业务");
