@@ -29,7 +29,7 @@ public class TestDemo {
         System.out.println("dasdasd");
     }
 
-    public static void main(String[] args) throws CloneNotSupportedException{
+    public static void main5(String[] args) throws CloneNotSupportedException{
         func3(10);
         System.out.println("fafaf");
         //这里还是没有处理异常，只是不会发生编译异常，但是还是交给了JVM处理
@@ -37,6 +37,7 @@ public class TestDemo {
         //1.编译时异常必须处理
         //2.运行时异常可以不处理
         //3.程序员处理了异常，没处理，就会交给JVM处理，异常终止了程序
+
 
     }
 
