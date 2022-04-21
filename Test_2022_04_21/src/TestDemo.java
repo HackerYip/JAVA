@@ -4,27 +4,39 @@ public class TestDemo {
         if(a == 10){
             throw new CloneNotSupportedException("a==10");
         }
-    }
-
-    public static void func2()
-
-
-
-
-
-
-
-
-
+    }//
 
     public static void func2(int a){
+        try{
+            if(a == 10){
+                throw new CloneNotSupportedException("a==10");
+            }
+        }catch (CloneNotSupportedException e){
+            e.printStackTrace();
+        }
+    }//这里是自己处理的，所以下面main函数调用的时候，可以执行后面的打印业务，没有交给JVM处理异常
+
+    public static void main(String[] args) {
+        func2(10);
+        System.out.println("dasdasd");
+    }
+
+
+
+
+
+
+
+
+
+    public static void func(int a){
         if(a == 0){
             throw new NullPointerException();
         }
     }
 
     public static void main2(String[] args) {
-        func2(10);
+        func(10);
         throw new NullPointerException();
     }
 
@@ -33,7 +45,7 @@ public class TestDemo {
         try{
             System.out.println(array[9]);//数组越界，这里抛出异常，就不会执行剩下的代码
             //所以程序当中，同时只能抛出一个异常
-            func2(10);//这里抛出的空指针异常就不捕捉了，因为上面异常了
+            func(10);//这里抛出的空指针异常就不捕捉了，因为上面异常了
             System.out.println("hahahah，这里没有执行");//这行代码及以下都不会执行
         }catch(ArrayIndexOutOfBoundsException | NullPointerException e){//但是只能同时捕捉一个异常，
             e.printStackTrace();//打印以下异常信息
