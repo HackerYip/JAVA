@@ -8,8 +8,21 @@ public class TestDemo {
 
     public static void main2(String[] args) {
         func2(10);
+        throw new NullPointerException();
     }
 
+    public static void main(String[] args) {
+        int[] array = {1,2,3};
+        try{
+            System.out.println(array[9]);//数组越界
+            func2(10);
+            System.out.println("hahahah，这里没有执行");//这行代码及以下都不会执行
+        }catch(ArrayIndexOutOfBoundsException | NullPointerException e){//但是只能同时捕捉一个异常，
+            e.printStackTrace();//打印以下异常信息
+            System.out.println("捕获到了一个数组越界的异常！！可以发给你一个邮件，告知你原因");
+        }
+        System.out.println("其他业务");
+    }
 
 
 
