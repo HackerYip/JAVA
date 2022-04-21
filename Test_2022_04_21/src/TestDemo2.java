@@ -20,7 +20,8 @@ public class TestDemo2 {
         }catch(Exception e){
             e.printStackTrace();//要放在这里
             //放在这里的意思就是
-            //
+            //假设程序捕获不到上面所写的异常
+            //那么就在这一段代码里面拦住所有的异常
         }
     }
 }
