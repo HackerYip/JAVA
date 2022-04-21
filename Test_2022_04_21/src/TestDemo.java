@@ -19,6 +19,12 @@ public class TestDemo {
     }//这里是自己处理的，所以下面main函数调用的时候，可以执行后面的打印业务，没有交给JVM处理异常
 
     public static void main(String[] args) {
+        try{
+            func3(10);
+        }catch(CloneNotSupportedException e){
+            e.printStackTrace();
+        }//所以这里来处理
+
         func2(10);
         System.out.println("dasdasd");
     }
