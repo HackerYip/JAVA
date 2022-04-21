@@ -1,7 +1,7 @@
 public class TestDemo {
 
     public static void func3(int a) throws CloneNotSupportedException{
-        if(a == 10){
+        if(a == 10){//这里不拿try catch处理异常的话，就要throw声明异常
             throw new CloneNotSupportedException("a==10");
         }
     }//
