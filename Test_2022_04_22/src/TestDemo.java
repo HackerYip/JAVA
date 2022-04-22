@@ -92,4 +92,8 @@ public class TestDemo {
         }
         return -1;
     }
+
+    long factorial(int N) {
+        return N < 2 ? N : factorial(N-1) * N;
+    }
 }
