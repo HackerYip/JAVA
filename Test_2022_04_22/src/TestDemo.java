@@ -51,4 +51,28 @@ public class TestDemo {
         System.out.println(count);
 
     }
+
+
+    void bubbleSort(int[] array) {
+
+        for (int end = array.length; end > 0; end--) {
+
+            boolean sorted = true;
+
+            for (int i = 1; i < end; i++) {
+
+                if (array[i - 1] > array[i]) {
+
+                    Swap(array, i - 1, i);
+
+                    sorted = false;
+
+                }
+
+            }
+            if (sorted == true) {
+                break;
+            }
+        }
+    }
 }
