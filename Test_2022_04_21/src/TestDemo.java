@@ -1,6 +1,16 @@
-public class TestDemo {
+ public class TestDemo {
 
-    public static void func3(int a) throws CloneNotSupportedException{
+//     String s1="abc"+"def";//1
+//     String s2=new String（s1);//2
+//if(s1.equals(s2))//3
+//             System.out.println(".equals succeeded");//4
+//if(s1==s2)//5
+//             System.out.println("==succeeded");//6
+
+
+
+
+     public static void func3(int a) throws CloneNotSupportedException{
         if(a == 10){//这里不拿try catch处理异常的话，就要throws声明异常
             //但是这里和下面的try catch不一样，这里只是声明异常，处理了受查异常而已
             //真正要在main函数调用func3的时候，同样会报错，因为没处理异常
