@@ -54,6 +54,7 @@ public class TestDemo {
 
 
     void bubbleSort(int[] array) {
+            //时间复杂度
         for (int end = array.length; end > 0; end--) {
             boolean sorted = true;
             for (int i = 1; i < end; i++) {
