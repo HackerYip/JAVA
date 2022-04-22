@@ -33,4 +33,21 @@ public class TestDemo {
 
 
 
+    void func1(int N){
+        int count = 0;
+        for (int i = 0; i < N ; i++) {
+            for (int j = 0; j < N ; j++) {
+                count++;
+            }
+        }
+
+        for (int k = 0; k < 2 * N ; k++) {
+            count++;
+        }
+        int M = 10;
+        while ((M--) > 0) {
+            count++;
+        }
+        System.out.println(count);
+    }
 }
