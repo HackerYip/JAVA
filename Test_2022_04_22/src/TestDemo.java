@@ -96,4 +96,10 @@ public class TestDemo {
     long factorial(int N) {
         return N < 2 ? N : factorial(N-1) * N;
     }
+
+    int fibonacci(int N) {
+
+        return N < 2 ? N : fibonacci(N-1)+fibonacci(N-2);
+
+    }
 }
