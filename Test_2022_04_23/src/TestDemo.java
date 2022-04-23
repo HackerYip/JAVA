@@ -1,4 +1,22 @@
+import java.util.Scanner;
+
 public class TestDemo {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        try{
+            System.out.println(10/0);
+            System.out.println("abcdef");
+        }catch(ArithmeticException e){
+            System.out.println("捕获到了算数异常 ");
+            e.printStackTrace();
+        }finally {
+            scanner.close();
+            System.out.println("一般用来关闭资源");//这一行代码，不管是否发生异常，finally一定会被执行
+        }
+        System.out.println("其他业务逻辑");
+    }
+
 
     public static void func3(int a) throws CloneNotSupportedException{
         if(a == 10){//这里不拿try catch处理异常的话，就要throws声明异常
@@ -40,7 +58,7 @@ public class TestDemo {
 
 
     }
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         //有时候我们抛出的异常是存在父子类关系的
         //所有的异常都继承于Exception
         int[] array = {1,2,3,4};
@@ -64,4 +82,7 @@ public class TestDemo {
             //那么就在这一段代码里面拦住所有的异常
         }
     }
+
+
+
 }
