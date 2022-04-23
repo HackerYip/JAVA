@@ -1,5 +1,14 @@
 import java.util.Scanner;
 
+//自定义异常
+//自定一个类，让此类继承于一个异常类即可，一般我们建议继承2个中的一个
+//1.Exception，默认就是一个受查异常，或者是一个编译时异常 -> 必须"处理"之后，才能运行
+//try catch是真正的处理方式   throws只是声明，真正还会交给JVM处理
+//2.RuntimeException 运行时异常，非受查异常
+
+
+
+
 public class TestDemo {
 
     public static void func2() {
