@@ -2,6 +2,21 @@ import java.util.Scanner;
 
 public class TestDemo {
 
+    public static void func2() {
+        int[] array = {1,2,3};
+        System.out.println(array[100]);
+    }
+
+    public static void main(String[] args) {
+        try{
+            func2();
+        }catch(ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
+        }
+
+        System.out.println("fafafafafafa");//处理后正常执行，不处理就交给JVM
+    }
+
     public static int func() {
         try{
             System.out.println(10/10);
@@ -9,9 +24,10 @@ public class TestDemo {
         }catch (ArithmeticException e){
             System.out.println("这里捕捉到了算数异常!");
         }finally{
-            return -1;//因为finally这个代码块一定会被执行的，虽然try里面写了return，但是最终还是会执行finally里面的
-            // 所以尽量不要在
+            //return -1;//因为finally这个代码块一定会被执行的，虽然try里面写了return，但是最终还是会执行finally里面的
+            // 所以尽量不要在finally语句中进行return
         }
+        return 9;//这样就不会抛异常了
     }
 
     public static void main2(String[] args) {
