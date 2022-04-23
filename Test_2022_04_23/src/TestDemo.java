@@ -3,6 +3,16 @@ import java.util.Scanner;
 public class TestDemo {
 
     public static void main(String[] args) {
+        try{
+            System.out.println(10/0);
+        }catch (ArithmeticException e){
+            System.out.println("这里捕捉到了算数异常!");
+        }finally{
+
+        }
+    }
+
+    public static void main2(String[] args) {
         Scanner scanner = new Scanner(System.in);
         try{
             System.out.println(10/0);
