@@ -2,13 +2,14 @@ import java.util.Scanner;
 
 public class TestDemo {
 
-    public static void main(String[] args) {
+    public static int func() {
         try{
-            System.out.println(10/0);
+            System.out.println(10/10);
+            return 10;
         }catch (ArithmeticException e){
             System.out.println("这里捕捉到了算数异常!");
         }finally{
-
+            return -1;
         }
     }
 
