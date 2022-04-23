@@ -22,7 +22,6 @@ public class TestDemo {
         }catch(ArrayIndexOutOfBoundsException e){
             e.printStackTrace();
         }
-
         System.out.println("fafafafafafa");//处理后正常执行，不处理就交给JVM
     }
 
