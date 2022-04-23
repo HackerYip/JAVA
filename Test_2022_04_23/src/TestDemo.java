@@ -6,9 +6,6 @@ import java.util.Scanner;
 //try catch是真正的处理方式   throws只是声明，真正还会交给JVM处理
 //2.RuntimeException 运行时异常，非受查异常
 
-
-
-
 public class TestDemo {
 
     public static void func2() {
