@@ -9,7 +9,8 @@ public class TestDemo {
         }catch (ArithmeticException e){
             System.out.println("这里捕捉到了算数异常!");
         }finally{
-            return -1;
+            return -1;//因为finally这个代码块一定会被执行的，虽然try里面写了return，但是最终还是会执行finally里面的
+            // 所以尽量不要在
         }
     }
 
