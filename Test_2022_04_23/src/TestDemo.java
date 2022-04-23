@@ -57,7 +57,7 @@ public class TestDemo {
             //真正要在main函数调用func3的时候，同样会报错，因为没处理异常
             throw new CloneNotSupportedException("a==10");
         }
-    }//
+    }
 
     public static void func2(int a){
         try{
