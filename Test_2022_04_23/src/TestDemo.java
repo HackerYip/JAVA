@@ -75,7 +75,6 @@ public class TestDemo {
         }catch(CloneNotSupportedException e){
             e.printStackTrace();
         }//所以这里来处理func3的异常
-
         func2(10);
         System.out.println("dasdasd");
     }
