@@ -87,8 +87,6 @@ public class TestDemo {
         //1.编译时异常必须处理
         //2.运行时异常可以不处理
         //3.程序员处理了异常，没处理，就会交给JVM处理，异常终止了程序
-
-
     }
     public static void main1(String[] args) {
         //有时候我们抛出的异常是存在父子类关系的
