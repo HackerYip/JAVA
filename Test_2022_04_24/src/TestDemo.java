@@ -96,4 +96,17 @@ public class TestDemo {
 
         }
     }
+
+
+    //homework
+//    1.以下关于泛型的说法, 错误的是:
+//
+//
+//    作业内容
+//    A.泛型能够使一个方法同时兼容多种不同类型的参数
+//    B.形如这样 MyArrayList<String> list = new MyArrayList() 的写法是合法的
+//    C.针对方法和类都可以使用泛型
+//    D.泛型不能针对静态内部类使用
+
+
 }
