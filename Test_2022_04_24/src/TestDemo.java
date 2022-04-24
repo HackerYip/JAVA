@@ -59,5 +59,20 @@ public class TestDemo {
         public void set(int pos, int value){
 
         }
+
+        //删除第一次出现的关键字key
+        public void remove(int toRemove){
+
+        }
+
+        //获取顺序表长度
+        public int size(){
+            return 0;
+        }
+
+        //清空顺序表
+        public void clear(){
+
+        }
     }
 }
