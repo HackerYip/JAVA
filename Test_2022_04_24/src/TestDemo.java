@@ -37,6 +37,10 @@ public class TestDemo {
         //新增元素,默认在数组最后新增
         public void add(int data){
             //1.判断是否满，如果满，那就扩容
+            if(isFull()){
+                //扩容
+                this.elem = Arrays.copyof(this.elem,2*this.elem.length);
+            }
             //2.不满进行插入
 
 
@@ -44,6 +48,10 @@ public class TestDemo {
 
             public boolean isFull(){
                 //判断数组是否满了不能放元素
+            if(this.usedSize == this.elem.length){
+                return true;
+            }
+            return false;
             }
         }
 
