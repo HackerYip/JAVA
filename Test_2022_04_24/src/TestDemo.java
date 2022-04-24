@@ -109,4 +109,7 @@ public class TestDemo {
 //    D.泛型不能针对静态内部类使用
 
 
+
+
+
 }
