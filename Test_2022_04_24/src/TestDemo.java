@@ -109,7 +109,22 @@ public class TestDemo {
 //    D.泛型不能针对静态内部类使用
 
 
-
+//2.给定方法如下
+//
+//public static void printAll(MyArrayList<? extends Number> list) {
+//
+//  ...
+//
+//}
+//
+//此时以下哪些调用方式是错误的
+//
+//
+//作业内容
+//A.printAll(new MyArrayList<Integer>());
+//B.printAll(new MyArrayList<Double>());
+//C.printAll(new MyArrayList<Number>());
+//D.printAll(new MyArrayList<Object>());
 
 
 }
