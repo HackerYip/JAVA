@@ -12,7 +12,7 @@ public class TestDemo {
 
     }
 
-    public Object getPos(int pos){
+    public T getPos(int pos){
         return array2[pos];
     }
 }
