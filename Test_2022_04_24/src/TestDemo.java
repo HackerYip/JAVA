@@ -39,5 +39,25 @@ public class TestDemo {
         public void add(int pos, int data){
 
         }
+
+        //判定是否包含某个元素
+        public boolean contains(int toFind){
+         return true;
+        }
+
+        //查找某个与乃是对应的位置
+        public int indexOf(int toFind){
+            return -1;
+        }
+
+        //获取 pos 位置的元素
+        public int get(int pos){
+            return -1;
+        }
+
+        // 给 pos 位置的元素设为 value
+        public void set(int pos, int value){
+
+        }
     }
 }
