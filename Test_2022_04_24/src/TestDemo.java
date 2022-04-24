@@ -124,7 +124,7 @@ public class TestDemo {
 //A.printAll(new MyArrayList<Integer>());
 //B.printAll(new MyArrayList<Double>());
 //C.printAll(new MyArrayList<Number>());
-//D.printAll(new MyArrayList<Object>());
+//D.printAll(new MyArrayList<Object>());//D
 
 
 }
