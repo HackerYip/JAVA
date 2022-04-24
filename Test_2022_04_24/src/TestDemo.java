@@ -30,5 +30,14 @@ public class TestDemo {
 
         }
 
+        //新增元素,默认在数组最后新增
+        public void add(int data){
+
+        }
+
+        //在 pos 位置新增元素
+        public void add(int pos, int data){
+
+        }
     }
 }
