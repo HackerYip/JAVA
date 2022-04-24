@@ -27,12 +27,24 @@ public class TestDemo {
 
         //打印顺序表
         public void display(){
-
+            //usedSize==0;
+            for (int i = 0; i < this.usedSize; i++) {
+                System.out.println(this.elem[i]+ " ");
+            }
+            System.out.println();
         }
 
         //新增元素,默认在数组最后新增
         public void add(int data){
+            //1.判断是否满，如果满，那就扩容
+            //2.不满进行插入
 
+
+
+
+            public boolean isFull(){
+                //判断数组是否满了不能放元素
+            }
         }
 
         //在 pos 位置新增元素
