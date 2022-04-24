@@ -42,7 +42,8 @@ public class TestDemo {
                 this.elem = Arrays.copyof(this.elem,2*this.elem.length);
             }
             //2.不满进行插入
-
+        this.elem[this.usedSize] = data;
+            this.usedSize++;
 
 
 
