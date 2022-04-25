@@ -21,19 +21,18 @@ public class TestDemo {
 //
 
     public class MyArraylist {
-        public int[] elem;
+        public int[] elem = new int[4];
         public int usedSize;
+        private static final int DEFAULT_SIZE = 4;
 
         public MyArraylist() {
-            this.elem = new int[10];
         }
 
-        //打印顺序表
         public void display() {
-            //usedSize==0;
-            for (int i = 0; i < this.usedSize; i++) {
-                System.out.println(this.elem[i] + " ");
+            for(int i = 0; i < this.usedSize; ++i) {
+                System.out.print(this.elem[i] + " ");
             }
+
             System.out.println();
         }
 
