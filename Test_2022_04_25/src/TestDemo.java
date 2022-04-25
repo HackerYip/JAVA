@@ -118,7 +118,6 @@ public class TestDemo {
                 return this.usedSize;
             }
 
-
             //清空顺序表
             public void clear () {
 
