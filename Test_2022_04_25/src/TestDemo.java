@@ -78,7 +78,13 @@ public class TestDemo {
 
         //判定是否包含某个元素
         public boolean contains(int toFind) {
-            return true;
+            for(int i = 0; i < this.usedSize; ++i) {
+                if (this.elem[i] == toFind) {
+                    return true;
+                }
+            }
+            return false;
+
         }
 
         //查找某个与乃是对应的位置
