@@ -87,6 +87,22 @@ public class TestDemo {
 
         }
 
+        public void remove(int key) {
+            if (this.isEmpty()) {
+                throw new MyArrayListEmptyException("顺序表为空，不能删除！");
+            } else {
+                int index = this.indexOf(key);
+                if (index == -1) {
+                    System.out.println("不存在你要删除的数据");
+                } else {
+                    for(int i = index; i < this.usedSize - 1; ++i) {
+                        this.elem[i] = this.elem[i + 1];
+                    }
+
+                    --this.usedSize;
+                }
+            }
+        }
         //查找某个与乃是对应的位置
         public int indexOf(int toFind) {
             return -1;
