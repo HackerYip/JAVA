@@ -114,14 +114,17 @@ public class TestDemo {
             }
 
             //获取顺序表长度
-            public int size () {
-                return 0;
+            public int size() {
+                return this.usedSize;
             }
+
 
             //清空顺序表
             public void clear () {
 
+                this.usedSize = 0;
             }
+
         }
 
         //homework
