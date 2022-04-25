@@ -74,6 +74,7 @@ public class TestDemo {
             }
         }
 
+
         //判定是否包含某个元素
         public boolean contains(int toFind) {
             for(int i = 0; i < this.usedSize; ++i) {
@@ -109,7 +110,6 @@ public class TestDemo {
             if (!checkPosInGet(pos)) {
                 throw new MyArraylistIndexOutOfException("更行pos下标的元素，位置不合法");
                 //
-
 
             }
 
