@@ -69,10 +69,12 @@ public class TestDemo {
                 for(int i = this.usedSize - 1; i >= pos; --i) {
                     this.elem[i + 1] = this.elem[i];
                 }
+
                 this.elem[pos] = data;
                 ++this.usedSize;
             }
         }
+
 
 
         //判定是否包含某个元素
