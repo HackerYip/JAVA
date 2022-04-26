@@ -110,10 +110,12 @@ public class TestDemo {
             return -1;
         }
 
+
         //获取 pos 位置的元素
         public int get(int pos) {
             return -1;
         }
+
         private boolean checkPosInGet(int pos) {
             if (pos >= 0 && pos < this.usedSize) {
                 return true;
