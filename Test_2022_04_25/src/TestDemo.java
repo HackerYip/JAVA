@@ -124,6 +124,7 @@ public class TestDemo {
                 return false;
             }
         }
+
         // 给 pos 位置的元素设为 value
         public void set(int pos, int value) {
             if (!checkPosInGet(pos)) {
