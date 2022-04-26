@@ -114,7 +114,14 @@ public class TestDemo {
         public int get(int pos) {
             return -1;
         }
-
+        private boolean checkPosInGet(int pos) {
+            if (pos >= 0 && pos < this.usedSize) {
+                return true;
+            } else {
+                System.out.println("pos位置不合法");
+                return false;
+            }
+        }
         // 给 pos 位置的元素设为 value
         public void set(int pos, int value) {
             if (!checkPosInGet(pos)) {
