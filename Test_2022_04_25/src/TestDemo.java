@@ -76,6 +76,9 @@ public class TestDemo {
         }
 
 
+        public boolean isFull() {
+            return this.usedSize == this.elem.length;
+        }
 
         //判定是否包含某个元素
         public boolean contains(int toFind) {
@@ -182,8 +185,6 @@ public class TestDemo {
 
 
     }
-
-
 
 }
 
