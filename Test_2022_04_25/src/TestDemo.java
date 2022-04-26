@@ -101,7 +101,6 @@ public class TestDemo {
                     for(int i = index; i < this.usedSize - 1; ++i) {
                         this.elem[i] = this.elem[i + 1];
                     }
-
                     --this.usedSize;
                 }
             }
