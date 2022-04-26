@@ -105,6 +105,7 @@ public class TestDemo {
                 }
             }
         }
+
         //查找某个与乃是对应的位置
         public int indexOf(int toFind) {
             return -1;
