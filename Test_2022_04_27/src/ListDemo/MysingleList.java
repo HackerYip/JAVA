@@ -19,7 +19,9 @@ public class MysingleList {
         }
     }
 
+
     public ListNode head;//代表单链表的头节点的引用，所以定义在链表外
+
 
     public void createList(){
         //这里只是简单的进行链表的构造
