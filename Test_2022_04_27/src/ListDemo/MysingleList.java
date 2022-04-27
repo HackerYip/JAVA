@@ -10,6 +10,14 @@ public class MysingleList {
 
 
     static class ListNode{
+        //什么时候设计成内部类
+        //链表一个个节点这种
 
+        public int value;//数值域
+        public ListNode next;//存储下一个节点的地址
+
+        public ListNode(int val){
+            this.value = value;
+        }
     }
 }
