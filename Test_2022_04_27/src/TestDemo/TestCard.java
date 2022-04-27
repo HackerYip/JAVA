@@ -52,7 +52,7 @@ public class TestCard {
                     desk.add(card);
                 }
             }
-            return destk;
+            return desk;
         }
     public static void main(String[] args) {
 
