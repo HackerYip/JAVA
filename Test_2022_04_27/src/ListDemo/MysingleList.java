@@ -7,8 +7,6 @@ public class MysingleList {
     //1.数值域，当前节点的地址
     //2.next域，下一个节点的地址
 
-
-
     static class ListNode{
         //什么时候设计成内部类
         //链表一个个节点这种
@@ -58,7 +56,5 @@ public class MysingleList {
 
         System.out.println("============");
     }
-
-
 
 }
