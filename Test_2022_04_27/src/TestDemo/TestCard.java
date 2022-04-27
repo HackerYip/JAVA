@@ -56,7 +56,7 @@ public class TestCard {
             return desk;
         }
 
-        public satatic void shuffle(List<Card> cardList){
+        public static void shuffle(List<Card> cardList){
         for (int i = 0; i < cardList.sizeP()-1; i--) {
             Random random = new Random();
             int index = random.nextInt();
