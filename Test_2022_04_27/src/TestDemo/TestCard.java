@@ -55,7 +55,11 @@ public class TestCard {
             return desk;
         }
     public static void main(String[] args) {
+        List<Card> cardList = buyCard();
+        System.out.println(cardList);
 
+
+        shuffle(cardList);//洗牌
 
     }
 }
