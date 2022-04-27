@@ -39,11 +39,25 @@ public class MysingleList {
         //到这里就链起来了
 
         this.head = listNode1;//head指向12
-
-
     }
 
+    public void display(){
+        ListNode cur = head;//让cur动，head下次再用链表就不为空了
 
+        while(cur != null){
+            System.out.println(cur.value+" ");
+            head = head.next;
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+
+        MysingleList mysingleList  = new MysingleList();//这就是一个单链表
+        mysingleList.createList();
+
+        System.out.println("============");
+    }
 
 
 
