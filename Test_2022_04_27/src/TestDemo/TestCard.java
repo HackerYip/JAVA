@@ -2,6 +2,7 @@ package TestDemo;
 
 
 import javax.swing.*;
+import java.util.Random;
 
 class card{
         private String suit;
@@ -54,6 +55,13 @@ public class TestCard {
             }
             return desk;
         }
+
+        public satatic void shuffle(List<Card> cardList){
+        for (int i = 0; i < cardList.sizeP()-1; i--) {
+            Random random = new Random();
+            int index = random.nextInt();
+        }
+    }
     public static void main(String[] args) {
         List<Card> cardList = buyCard();
         System.out.println(cardList);
