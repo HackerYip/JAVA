@@ -32,7 +32,14 @@ public class MysingleList {
         ListNode listNode4 = new ListNode(45);
         ListNode listNode5 = new ListNode(56);
 
-        ListNode1.next = ListNode2;
+        listNode1.next = listNode2;
+        listNode2.next = listNode3;
+        listNode3.next = listNode4;
+        listNode4.next = listNode5;
+        //到这里就链起来了
+
+        this.head = listNode1;//head指向12
+
 
     }
 
