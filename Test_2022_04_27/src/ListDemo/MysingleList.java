@@ -56,5 +56,4 @@ public class MysingleList {
 
         System.out.println("============");
     }
-
 }
