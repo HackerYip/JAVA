@@ -20,4 +20,24 @@ public class MysingleList {
             this.value = value;
         }
     }
+
+    public ListNode head;//代表单链表的头节点的引用，所以定义在链表外
+
+    public void createList(){
+        //这里只是简单的进行链表的构造
+
+        ListNode listNode1 = new ListNode(12);
+        ListNode listNode2 = new ListNode(23);
+        ListNode listNode3 = new ListNode(34);
+        ListNode listNode4 = new ListNode(45);
+        ListNode listNode5 = new ListNode(56);
+
+        ListNode1.next = ListNode2;
+
+    }
+
+
+
+
+
 }
