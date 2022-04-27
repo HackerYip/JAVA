@@ -1,10 +1,9 @@
 package TestDemo;
 
-public class TestCard {
 
+import javax.swing.*;
 
-
-    class card{
+class card{
         private String suit;
         private  int rank;
 
@@ -37,6 +36,24 @@ public class TestCard {
                     '}';
         }
     }
+
+public class TestCard {
+
+        public static final String[] suits = {"♥","♠","♣","♦"};
+
+
+        public static List<Card> buyCard(){
+            //买一副牌出来
+
+            for (int i = 0; i < 4; i++) {
+                for (int j = 0; j <= 13 ; j++) {
+                    String suit = suits[i];
+                    Card card = new Card(suit);
+                    desk.add(card);
+                }
+            }
+            return destk;
+        }
     public static void main(String[] args) {
 
 
