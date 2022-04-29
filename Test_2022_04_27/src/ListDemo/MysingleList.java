@@ -1,7 +1,5 @@
 package ListDemo;
 
-import java.util.Arrays;
-
 public class MysingleList {
 
     //链表(单向，双向，带头，不带头，循环，非循环)
@@ -63,25 +61,7 @@ public class MysingleList {
     }
 
 
-    public String(char value[], int offset, int count) {
-        if (offset < 0) {
-            throw new StringIndexOutOfBoundsException(offset);
-        }
-        if (count <= 0) {
-            if (count < 0) {
-                throw new StringIndexOutOfBoundsException(count);
-            }
-            if (offset <= value.length) {
-                this.value = "".value;
-                return;
-            }
-        }
-        // Note: offset or count might be near -1>>>1.
-        if (offset > value.length - count) {
-            throw new StringIndexOutOfBoundsException(offset + count);
-        }
-        this.value = Arrays.copyOfRange(value, offset, offset+count);
-    }
+
 }
 
 //
