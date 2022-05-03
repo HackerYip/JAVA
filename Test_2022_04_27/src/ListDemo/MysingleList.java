@@ -1,6 +1,8 @@
 package ListDemo;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class MysingleList {
 
@@ -85,4 +87,30 @@ public class MysingleList {
 }
 
 //
+public TestDemo() {
+}
+
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> ret = new ArrayList();
+        List<Integer> one = new ArrayList();
+        one.add(1);
+        ret.add(one);
+
+        for(int i = 1; i < numRows; ++i) {
+            List<Integer> curRow = new ArrayList();
+            curRow.add(1);
+            List<Integer> preRow = (List)ret.get(i - 1);
+
+            for(int j = 1; j < i; ++j) {
+                int x = (Integer)preRow.get(j) + (Integer)preRow.get(j - 1);
+                curRow.add(x);
+            }
+
+            curRow.add(1);
+            ret.add(curRow);
+        }
+
+        return ret;
+    }
+
 
