@@ -88,29 +88,27 @@ public class MysingleList {
 
 //
 public TestDemo() {
-}
+    public static List<Character> func(String s1, String s2) {
+        if (s1 != null && s2 != null) {
+            if (s1.length() != 0 && s2.length() != 0) {
+                List<Character> ret = new ArrayList();
 
-    public List<List<Integer>> generate(int numRows) {
-        List<List<Integer>> ret = new ArrayList();
-        List<Integer> one = new ArrayList();
-        one.add(1);
-        ret.add(one);
+                for(int i = 0; i < s1.length(); ++i) {
+                    char ch = s1.charAt(i);
+                    if (!s2.contains(ch + "")) {
+                        ret.add(ch);
+                    }
+                }
 
-        for(int i = 1; i < numRows; ++i) {
-            List<Integer> curRow = new ArrayList();
-            curRow.add(1);
-            List<Integer> preRow = (List)ret.get(i - 1);
-
-            for(int j = 1; j < i; ++j) {
-                int x = (Integer)preRow.get(j) + (Integer)preRow.get(j - 1);
-                curRow.add(x);
+                return ret;
+            } else {
+                return null;
             }
-
-            curRow.add(1);
-            ret.add(curRow);
+        } else {
+            return null;
         }
-
-        return ret;
     }
+
+}
 
 
