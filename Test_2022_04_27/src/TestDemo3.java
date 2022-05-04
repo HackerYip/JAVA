@@ -72,13 +72,6 @@ public class TestDemo3 {
         new ArrayList(15);
     }
 
-
-    public static void main1(String[] args) {
-        MyArraylist myArraylist = new MyArraylist();
-        System.out.println("========================");
-        int ret = myArraylist.get(2);
-        System.out.println(ret);
-    }
 }
 
 
