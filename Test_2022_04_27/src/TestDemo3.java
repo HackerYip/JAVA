@@ -56,6 +56,22 @@ public class TestDemo3 {
         System.out.println(index);
     }
 
+    public static void main3(String[] args) {
+        ArrayList<Integer> arrayList = new ArrayList();
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(4);
+        System.out.println(arrayList.size());
+        System.out.println(arrayList.get(1));
+        System.out.println("=============");
+        ArrayList<Integer> arrayList2 = new ArrayList(arrayList);
+        arrayList2.add(99);
+        arrayList2.add(199);
+        System.out.println(arrayList2);
+        new ArrayList(15);
+    }
+
 
     public static void main1(String[] args) {
         MyArraylist myArraylist = new MyArraylist();
