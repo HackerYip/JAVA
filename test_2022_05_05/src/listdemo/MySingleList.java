@@ -10,6 +10,7 @@ public class MySingleList {
             this.val = val;
         }
     }
+
     public ListNode head;//代表单链表的头结点的引用
 
 
