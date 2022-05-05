@@ -86,29 +86,8 @@ public class MysingleList {
 
 }
 
-//
-public TestDemo() {
-    public static List<Character> func(String s1, String s2) {
-        if (s1 != null && s2 != null) {
-            if (s1.length() != 0 && s2.length() != 0) {
-                List<Character> ret = new ArrayList();
 
-                for(int i = 0; i < s1.length(); ++i) {
-                    char ch = s1.charAt(i);
-                    if (!s2.contains(ch + "")) {
-                        ret.add(ch);
-                    }
-                }
 
-                return ret;
-            } else {
-                return null;
-            }
-        } else {
-            return null;
-        }
-    }
 
-}
 
 
