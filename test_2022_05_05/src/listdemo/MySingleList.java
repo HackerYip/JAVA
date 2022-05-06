@@ -37,6 +37,13 @@ public class MySingleList {
         System.out.println();
     }
 
-
+    public void display(ListNode newHead) {
+        ListNode cur = newHead;
+        while (cur != null) {
+            System.out.print(cur.val+" ");
+            cur = cur.next;
+        }
+        System.out.println();
+    }
 
 }
