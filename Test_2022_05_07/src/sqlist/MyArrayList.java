@@ -20,11 +20,16 @@ public class MyArrayList {
 
     //新增元素，默认在数组最后新增
     public void add(int data){
-        //先判断是不是满的
+        //1.先判断是不是满的，如果满的那么 进行 扩容
+        //2.不满进行插入
+
     }
 
     //判断当前顺序表是不是满的
     public boolean isFull(){
-
+        if(usedSized == this.elem.length){
+            return true;
+        }
+        return false;
     }
 }
