@@ -1,5 +1,7 @@
 package sqlist;
 
+import java.util.Arrays;
+
 public class MyArrayList {
 
     public int[] elem;
@@ -21,6 +23,11 @@ public class MyArrayList {
     //新增元素，默认在数组最后新增
     public void add(int data){
         //1.先判断是不是满的，如果满的那么 进行 扩容
+
+        if(isFull()){
+            //扩容
+            this.elem = Arrays.copyOf(this.elem,2*this.elem.length);
+        }
         //2.不满进行插入
 
     }
