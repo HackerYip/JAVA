@@ -26,13 +26,20 @@ public class My {
             }
 
         }
-
         /**
          * 出队
          * @return
+         *//**
+         * 出队
+         * @return
          */
+
         public boolean deQueue() {
-            return false;
+            if(isFull()){
+                return false;
+            }
+            front = (front + 1) % elem.length;
+            return true;
         }
 
         /**
@@ -60,7 +67,7 @@ public class My {
                 return false;
             }
             else{
-                return
+
             }
         }
 
