@@ -9,5 +9,6 @@ public class TestDemo {
     public static void fun(Message<?> temp){
         //temp.setMessage(1);
 
+
     }
 }
