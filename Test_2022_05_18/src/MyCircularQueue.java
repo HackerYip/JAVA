@@ -70,6 +70,16 @@ public class MyCircularQueue {
         public boolean isEmpty() {
             return rear == front;
         }
-
+    /**
+     * 判断当前队列是否为满
+     * 浪费一个空间来表示满
+     * @return
+     */
+    public boolean isFull() {
+        if( (rear+1)%elem.length == front ) {
+            return true;
+        }
+        return false;
+    }
 
 }
