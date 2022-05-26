@@ -33,6 +33,7 @@ public class MyLinkedList {
         this.usedSize++;
     }
 
+
     /**
      * 出队
      * @return
@@ -66,5 +67,55 @@ public class MyLinkedList {
     public boolean isEmpty() {
         return usedSize == 0;
     }
+    class MyStack {
+
+
+        private Queue<Integer> qu1;
+        private Queue<Integer> qu2;
+
+        public MyStack() {
+            qu1 = new LinkedList<>();
+            qu2 = new LinkedList<>();
+        }
+
+        /**
+         入到不为空的队列当中
+         如果都为空 放到qu1当中
+         */
+        public void push(int x) {
+            if(!qu1.isEmpty()) {
+                qu1.offer(x);
+            }else if(!qu2.isEmpty()) {
+                qu2.offer(x);
+            }else{
+                qu1.offer(x);
+            }
+        }
+
+        public int pop() {
+            //1、先要判断 当前 “栈” 是否为空
+            if(empty()) {
+                return -1;
+            }
+
+            if(!qu1.isEmpty()) {
+                //出这个不为空的队列，出size-1
+                int size = qu1.size();
+                for(int i = 0;i < size-1;i++) {
+                    // int tmp = qu1.poll();
+                    // qu2.offer(tmp);
+                    qu2.offer(qu1.poll());
+                }
+                return qu1.poll();
+            } else {
+                //出这个不为空的队列，出size-1
+                int size = qu2.size();
+                for(int i = 0;i < size-1;i++) {
+                    qu1.offer(qu2.poll());
+                }
+                return qu2.poll();
+            }
+        }
+
 
 }
