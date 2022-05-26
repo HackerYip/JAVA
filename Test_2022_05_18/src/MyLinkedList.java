@@ -116,6 +116,37 @@ public class MyLinkedList {
                 return qu2.poll();
             }
         }
+        public int top() {
+            //1、先要判断 当前 “栈” 是否为空
+            if(empty()) {
+                return -1;
+            }
 
+            if(!qu1.isEmpty()) {
+                int size = qu1.size();
+                int tmp = -1;
+                for(int i = 0;i < size;i++) {
+                    tmp = qu1.poll();
+                    qu2.offer(tmp);
+                }
+                return tmp;
+            } else {
+                int size = qu2.size();
+                int tmp = -1;
+                for(int i = 0;i < size ;i++) {
+                    tmp = qu2.poll();
+                    qu1.offer(tmp);
+                }
+                return tmp;
+            }
+        }
+
+        public boolean empty() {
+            if(qu1.isEmpty() && qu2.isEmpty()) {
+                return true;
+            }
+            return false;
+        }
+    }
 
 }
