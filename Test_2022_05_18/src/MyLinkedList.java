@@ -51,6 +51,9 @@ public class MyLinkedList {
         usedSize--;
         return val;
     }
+
+
+
     /**
      * 出队 但是不删除
      * @return
