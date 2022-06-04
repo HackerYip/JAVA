@@ -151,6 +151,7 @@ public class MyLinkedList {
             if(qu1.isEmpty() && qu2.isEmpty()) {
                 return true;
             }
+
             return false;
         }
     }
