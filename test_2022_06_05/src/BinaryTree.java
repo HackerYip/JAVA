@@ -149,4 +149,6 @@ public class BinaryTree {
             size(root.left);
             size(root.right);
         }
+    }
+
 }
