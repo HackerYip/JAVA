@@ -117,6 +117,7 @@ public class BinaryTree {
             postOrder(root.left);
             postOrder(root.right);
             System.out.print(root.val + " ");
+
         }
 
         public List<Character> postorderTraversal(TreeNode root) {
