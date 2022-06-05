@@ -1,5 +1,5 @@
 public class BinaryTree {
-
+    import java.util.*;
 
     /**
      * @Author 12629
@@ -64,6 +64,52 @@ public class BinaryTree {
         preorderTraversal(root.right);
         return ret;
     }*/
+
+        /**
+         * 子问题思路：
+         *
+         * @param root
+         * @return
+         */
+        public List<Character> preorderTraversal(TreeNode root) {
+            List<Character> ret = new ArrayList<>();
+            if (root == null) return ret;
+            ret.add(root.val);
+
+            List<Character> leftTree = preorderTraversal(root.left);
+            ret.addAll(leftTree);
+
+            List<Character> rightTree = preorderTraversal(root.right);
+            ret.addAll(rightTree);
+
+            return ret;
+        }
+
+
+        // 中序遍历
+        void inOrder(TreeNode root) {
+            if (root == null) return;
+            inOrder(root.left);
+            System.out.print(root.val + " ");
+            inOrder(root.right);
+        }
+
+        public List<Character> inorderTraversal(TreeNode root) {
+            List<Character> ret = new ArrayList<>();
+            if (root == null) return ret;
+
+            List<Character> leftTree = inorderTraversal(root.left);
+            ret.addAll(leftTree);
+
+
+            ret.add(root.val);
+
+
+            List<Character> rightTree = inorderTraversal(root.right);
+            ret.addAll(rightTree);
+
+            return ret;
+        }
 
 
 }
