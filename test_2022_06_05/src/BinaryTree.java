@@ -43,6 +43,7 @@ public class BinaryTree {
             C.right = G;
             //E.right = H;
             return A;
+
         }
 
         // 前序遍历
