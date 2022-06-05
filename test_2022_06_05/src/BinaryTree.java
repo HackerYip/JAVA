@@ -111,5 +111,40 @@ public class BinaryTree {
             return ret;
         }
 
+        // 后序遍历
+        void postOrder(TreeNode root) {
+            if (root == null) return;
+            postOrder(root.left);
+            postOrder(root.right);
+            System.out.print(root.val + " ");
+        }
 
+        public List<Character> postorderTraversal(TreeNode root) {
+            List<Character> ret = new ArrayList<>();
+            if (root == null) return ret;
+
+            List<Character> leftTree = postorderTraversal(root.left);
+            ret.addAll(leftTree);
+
+            List<Character> rightTree = postorderTraversal(root.right);
+            ret.addAll(rightTree);
+
+            ret.add(root.val);
+
+            return ret;
+
+        }
+
+
+        public static int nodeSize;
+
+        /**
+         * 获取树中节点的个数：遍历思路
+         */
+        void size(TreeNode root) {
+            if (root == null) return;
+            nodeSize++;
+            size(root.left);
+            size(root.right);
+        }
 }
