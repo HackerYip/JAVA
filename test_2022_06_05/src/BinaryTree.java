@@ -6,6 +6,8 @@ public class BinaryTree {
      */
     public class BinaryTree {
 
+
+
         static class TreeNode {
             public char val;
             public TreeNode left;//左孩子的引用
