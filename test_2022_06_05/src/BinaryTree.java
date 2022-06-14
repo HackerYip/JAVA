@@ -45,6 +45,8 @@ public class BinaryTree {
             //E.right = H;
             return A;
 
+
+
         }
 
         // 前序遍历
