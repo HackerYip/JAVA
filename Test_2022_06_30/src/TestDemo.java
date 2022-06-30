@@ -18,6 +18,7 @@ public class TestDemo {
             long startTime = System.currentTimeMillis();
             TestSort.quickSort(array);
             long endTime = System.currentTimeMillis();
+
             System.out.println("快速排序：" + (endTime - startTime));
         }
 
