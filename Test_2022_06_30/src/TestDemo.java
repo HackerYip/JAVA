@@ -31,6 +31,13 @@ public class TestDemo {
 
             System.out.println("希尔排序：" + (endTime - startTime));
         }
+        public static void testInsertSort(int[] array) {
+            array = Arrays.copyOf(array, array.length);
+            long startTime = System.currentTimeMillis();
+            TestSort.insertSort(array);
+            long endTime = System.currentTimeMillis();
+            System.out.println("插入排序：" + (endTime - startTime));
+        }
 
 
 }
