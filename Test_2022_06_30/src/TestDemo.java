@@ -45,6 +45,7 @@ public class TestDemo {
             long startTime = System.currentTimeMillis();
             TestSort.selectSort(array);
             long endTime = System.currentTimeMillis();
+
             System.out.println("选择排序：" + (endTime - startTime));
         }
 
