@@ -40,6 +40,15 @@ public class TestDemo {
             System.out.println("插入排序：" + (endTime - startTime));
 
         }
+        public static void testSelectSort(int[] array) {
+            array = Arrays.copyOf(array, array.length);
+            long startTime = System.currentTimeMillis();
+            TestSort.selectSort(array);
+            long endTime = System.currentTimeMillis();
+            System.out.println("选择排序：" + (endTime - startTime));
+        }
+
+
 
 
 }
