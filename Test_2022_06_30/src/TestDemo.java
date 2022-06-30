@@ -36,7 +36,9 @@ public class TestDemo {
             long startTime = System.currentTimeMillis();
             TestSort.insertSort(array);
             long endTime = System.currentTimeMillis();
+
             System.out.println("插入排序：" + (endTime - startTime));
+
         }
 
 
