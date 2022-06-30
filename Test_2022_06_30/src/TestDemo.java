@@ -53,6 +53,7 @@ public class TestDemo {
             long startTime = System.currentTimeMillis();
             TestSort.heapSort(array);
             long endTime = System.currentTimeMillis();
+
             System.out.println("堆排序：" + (endTime - startTime));
         }
 
