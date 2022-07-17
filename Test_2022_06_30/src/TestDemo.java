@@ -13,6 +13,8 @@ public class TestDemo {
     }
 
 
+
+
     public class Test {
 
         public static void testQuickSort(int[] array) {
@@ -35,8 +37,6 @@ public class TestDemo {
 
             System.out.println("希尔排序：" + (endTime - startTime));
         }
-
-
 
 
         public static void testInsertSort(int[] array) {
