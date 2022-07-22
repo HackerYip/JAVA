@@ -31,6 +31,8 @@ public class TestDemo {
 
         public static void testShellSort(int[] array) {
             array = Arrays.copyOf(array, array.length);
+
+
             long startTime = System.currentTimeMillis();
             TestSort.shellSort(array);
             long endTime = System.currentTimeMillis();
