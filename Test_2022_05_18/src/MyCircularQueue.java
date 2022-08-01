@@ -80,6 +80,8 @@ public class MyCircularQueue {
      * 浪费一个空间来表示满
      * @return
      */
+
+
     public boolean isFull() {
         if( (rear+1)%elem.length == front ) {
             return true;
