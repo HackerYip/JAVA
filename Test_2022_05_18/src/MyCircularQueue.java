@@ -72,6 +72,8 @@ public class MyCircularQueue {
          * 当前循环队列是否为空
          * @return
          */
+
+
         public boolean isEmpty() {
             return rear == front;
         }
