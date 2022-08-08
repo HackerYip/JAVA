@@ -86,6 +86,9 @@ public class MyCircularQueue {
      */
 
 
+
+
+
     public boolean isFull() {
         if( (rear+1)%elem.length == front ) {
             return true;
