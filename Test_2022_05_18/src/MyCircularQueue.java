@@ -6,10 +6,14 @@ public class MyCircularQueue {
         /**
          * 构造方法
          * @param k K个大小
+         *
+         *
          */
         public MyCircularQueue(int k) {
             elem = new int[k];
         }
+
+
 
         /**
          * 入队
