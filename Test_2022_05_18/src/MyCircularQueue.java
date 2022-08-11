@@ -1,8 +1,11 @@
 public class MyCircularQueue {
 
         private int[] elem;
+
         private int front;//表示队头下标
+
         private int rear;//表示队尾下标
+
         /**
          * 构造方法
          * @param k K个大小
@@ -12,6 +15,8 @@ public class MyCircularQueue {
         public MyCircularQueue(int k) {
             elem = new int[k];
         }
+
+
 
 
 
