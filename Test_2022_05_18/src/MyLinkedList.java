@@ -122,6 +122,7 @@ public class MyLinkedList {
 
 
 
+
         public int top() {
             //1、先要判断 当前 “栈” 是否为空
             if(empty()) {
