@@ -129,6 +129,8 @@ public class MyLinkedList {
                 return -1;
             }
 
+
+
             if(!qu1.isEmpty()) {
                 int size = qu1.size();
                 int tmp = -1;
